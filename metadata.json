@@ -1,0 +1,6 @@
+{
+  "name": "Contexta",
+  "description": "Bağlam temelli İngilizce kelime yakalama, aralıklı tekrar ve SAT/IELTS/AP çalışma uygulaması.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

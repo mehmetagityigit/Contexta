@@ -1,0 +1,22 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-contexta-09e7b9fe-5b09-4658-a887-ca9d67b8c68b",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    }
+  ],
+  "emulators": {
+    "firestore": {
+      "host": "127.0.0.1",
+      "port": 8085
+    },
+    "auth": {
+      "host": "127.0.0.1",
+      "port": 9099
+    },
+    "ui": {
+      "enabled": false
+    }
+  }
+}

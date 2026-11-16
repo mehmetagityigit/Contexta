@@ -1,0 +1,218 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated learner profile and onboarding preferences.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Firebase Auth UID matching document ID." },
+        "displayName": { "type": "string", "description": "Optional user display name." },
+        "email": { "type": "string", "description": "Optional user email." },
+        "targetExam": {
+          "type": "string",
+          "enum": ["GENERAL", "SAT", "IELTS", "AP_ACADEMIC"],
+          "description": "Study goal label."
+        },
+        "cefrLevel": {
+          "type": "string",
+          "enum": ["B1", "B2", "C1", "C2"],
+          "description": "Self-selected proficiency level."
+        },
+        "dailyGoalMinutes": { "type": "integer", "description": "Daily study goal in minutes (5-240)." },
+        "onboardingCompleted": { "type": "boolean", "description": "Whether onboarding flow is complete." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server update timestamp." }
+      },
+      "required": ["userId", "targetExam", "cefrLevel", "dailyGoalMinutes", "onboardingCompleted", "createdAt", "updatedAt"]
+    },
+    "VocabularyEntry": {
+      "title": "VocabularyEntry",
+      "description": "Saved English word or multi-word expression owned by a user.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "expression": { "type": "string", "description": "Original word or phrase." },
+        "normalizedExpression": { "type": "string", "description": "Lowercased normalized expression." },
+        "meaningTr": { "type": "string", "description": "Optional Turkish meaning." },
+        "definitionEn": { "type": "string", "description": "Optional English definition." },
+        "partOfSpeech": { "type": "string", "description": "Optional part of speech." },
+        "personalNote": { "type": "string", "description": "Optional personal study note." },
+        "tags": { "type": "array", "description": "Up to 10 string tags." },
+        "favorite": { "type": "boolean", "description": "Favorite flag." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server update timestamp." }
+      },
+      "required": ["userId", "expression", "normalizedExpression", "tags", "favorite", "createdAt", "updatedAt"]
+    },
+    "ContextExample": {
+      "title": "ContextExample",
+      "description": "Context sentence and source reference attached to a VocabularyEntry.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "vocabularyId": { "type": "string", "description": "Parent vocabulary document ID." },
+        "sentence": { "type": "string", "description": "English context sentence." },
+        "sourceTitle": { "type": "string", "description": "Optional source title (video, article, passage)." },
+        "sourceType": {
+          "type": "string",
+          "enum": ["VIDEO", "ARTICLE", "BOOK", "PODCAST", "READING", "LISTENING", "OVERLAY", "VOICE", "MANUAL"],
+          "description": "Context source category."
+        },
+        "optionalSourceUrl": { "type": "string", "description": "Optional source URL." },
+        "optionalTimestampSeconds": { "type": "integer", "description": "Optional video/audio timestamp in seconds." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server update timestamp." }
+      },
+      "required": ["userId", "vocabularyId", "sentence", "sourceType", "createdAt", "updatedAt"]
+    },
+    "ReviewState": {
+      "title": "ReviewState",
+      "description": "SM-2 spaced repetition scheduling state keyed by vocabularyId.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "vocabularyId": { "type": "string", "description": "Vocabulary ID matching document ID." },
+        "dueAtEpochMillis": { "type": "integer", "description": "Next due epoch milliseconds." },
+        "intervalDays": { "type": "integer", "description": "Current interval in days." },
+        "easeFactor": { "type": "number", "description": "SM-2 ease factor (1.3-5.0)." },
+        "repetitionCount": { "type": "integer", "description": "Consecutive successful repetitions." },
+        "lapseCount": { "type": "integer", "description": "Number of lapses." },
+        "lastReviewedAtEpochMillis": { "type": "integer", "description": "Optional last reviewed epoch millis." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Server update timestamp." }
+      },
+      "required": ["userId", "vocabularyId", "dueAtEpochMillis", "intervalDays", "easeFactor", "repetitionCount", "lapseCount", "createdAt", "updatedAt"]
+    },
+    "ReviewEvent": {
+      "title": "ReviewEvent",
+      "description": "Idempotent immutable flashcard review event.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "eventId": { "type": "string", "description": "Unique event ID matching document ID." },
+        "vocabularyId": { "type": "string", "description": "Reviewed vocabulary ID." },
+        "rating": { "type": "string", "enum": ["AGAIN", "HARD", "GOOD", "EASY"], "description": "User rating." },
+        "previousIntervalDays": { "type": "integer", "description": "Interval before review." },
+        "newIntervalDays": { "type": "integer", "description": "Interval after review." },
+        "reviewedAtEpochMillis": { "type": "integer", "description": "Review timestamp millis." },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Server creation timestamp." }
+      },
+      "required": ["userId", "eventId", "vocabularyId", "rating", "previousIntervalDays", "newIntervalDays", "reviewedAtEpochMillis", "createdAt"]
+    },
+    "StudySession": {
+      "title": "StudySession",
+      "description": "Completed study session record for progress tracking.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "moduleType": { "type": "string", "enum": ["FLASHCARD", "GRAMMAR", "READING", "LISTENING"] },
+        "topicOrContentId": { "type": "string", "description": "Topic or content ID." },
+        "durationSeconds": { "type": "integer", "description": "Active study duration in seconds." },
+        "totalItems": { "type": "integer", "description": "Number of cards or questions." },
+        "correctCount": { "type": "integer", "description": "Number of correct answers or passed cards." },
+        "dateKey": { "type": "string", "description": "YYYY-MM-DD in user's local timezone." },
+        "startedAtEpochMillis": { "type": "integer" },
+        "completedAtEpochMillis": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "moduleType", "topicOrContentId", "durationSeconds", "totalItems", "correctCount", "dateKey", "startedAtEpochMillis", "completedAtEpochMillis", "createdAt"]
+    },
+    "QuestionAttempt": {
+      "title": "QuestionAttempt",
+      "description": "Individual question attempt across Grammar, Reading, and Listening.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner UID." },
+        "moduleType": { "type": "string", "enum": ["GRAMMAR", "READING", "LISTENING"] },
+        "contentId": { "type": "string" },
+        "questionId": { "type": "string" },
+        "questionType": { "type": "string" },
+        "topicId": { "type": "string" },
+        "selectedOptionId": { "type": "string" },
+        "correctOptionId": { "type": "string" },
+        "isCorrect": { "type": "boolean" },
+        "answeredAtEpochMillis": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "moduleType", "contentId", "questionId", "selectedOptionId", "correctOptionId", "isCorrect", "answeredAtEpochMillis", "createdAt"]
+    },
+    "UserSettings": {
+      "title": "UserSettings",
+      "description": "Synced user preferences.",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "language": { "type": "string", "enum": ["tr", "en"] },
+        "themeMode": { "type": "string", "enum": ["SYSTEM", "LIGHT", "DARK"] },
+        "dailyGoalMinutes": { "type": "integer" },
+        "targetExam": { "type": "string", "enum": ["GENERAL", "SAT", "IELTS", "AP_ACADEMIC"] },
+        "cefrLevel": { "type": "string", "enum": ["B1", "B2", "C1", "C2"] },
+        "overlayScale": { "type": "number" },
+        "overlayAlpha": { "type": "number" },
+        "readingFontSizeSp": { "type": "integer" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "language", "themeMode", "dailyGoalMinutes", "targetExam", "cefrLevel", "overlayScale", "overlayAlpha", "readingFontSizeSp", "createdAt", "updatedAt"]
+    },
+    "PublishedContent": {
+      "title": "PublishedContent",
+      "description": "Read-only published curriculum content managed out-of-band by admin tooling.",
+      "type": "object",
+      "properties": {
+        "schemaVersion": { "type": "integer" },
+        "contentVersion": { "type": "integer" },
+        "level": { "type": "string" },
+        "title": { "type": "string" },
+        "status": { "type": "string", "enum": ["draft", "published", "archived"] }
+      },
+      "required": ["schemaVersion", "contentVersion", "level", "title", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User profile document."
+    },
+    "/users/{userId}/vocabulary/{vocabularyId}": {
+      "schema": { "$ref": "#/entities/VocabularyEntry" },
+      "description": "User saved vocabulary entries."
+    },
+    "/users/{userId}/contexts/{contextId}": {
+      "schema": { "$ref": "#/entities/ContextExample" },
+      "description": "User saved context sentences."
+    },
+    "/users/{userId}/reviewStates/{vocabularyId}": {
+      "schema": { "$ref": "#/entities/ReviewState" },
+      "description": "SM-2 scheduling state per vocabulary item."
+    },
+    "/users/{userId}/reviewEvents/{eventId}": {
+      "schema": { "$ref": "#/entities/ReviewEvent" },
+      "description": "Idempotent review history events."
+    },
+    "/users/{userId}/studySessions/{sessionId}": {
+      "schema": { "$ref": "#/entities/StudySession" },
+      "description": "Completed study sessions."
+    },
+    "/users/{userId}/attempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/QuestionAttempt" },
+      "description": "Practice question attempts."
+    },
+    "/users/{userId}/settings/{settingId}": {
+      "schema": { "$ref": "#/entities/UserSettings" },
+      "description": "User settings document."
+    },
+    "/contentGrammar/{contentId}": {
+      "schema": { "$ref": "#/entities/PublishedContent" },
+      "description": "Published grammar topics (read-only for mobile clients)."
+    },
+    "/contentReading/{contentId}": {
+      "schema": { "$ref": "#/entities/PublishedContent" },
+      "description": "Published reading passages (read-only for mobile clients)."
+    },
+    "/contentListening/{contentId}": {
+      "schema": { "$ref": "#/entities/PublishedContent" },
+      "description": "Published listening tracks (read-only for mobile clients)."
+    }
+  }
+}

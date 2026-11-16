@@ -1,0 +1,700 @@
+{
+  "passages": [
+    {
+      "id": "read_nat_b1b2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "levelGroup": "B1-B2",
+      "genre": "Natural Sciences",
+      "targetExams": ["IELTS", "SAT"],
+      "title": "How Urban Trees Cool City Streets",
+      "tags": ["ecology", "urban-climate"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Asphalt roads and concrete walls absorb solar radiation throughout the afternoon and release heat long after sunset, creating what urban climatologists call the heat island effect. On calm summer evenings, downtown neighborhoods can remain several degrees warmer than nearby rural valleys."
+        },
+        {
+          "id": "p2",
+          "text": "Street trees counter this warming through two distinct mechanisms. First, broad canopies intercept sunlight before it reaches dark pavement, reducing surface temperatures by up to fifteen degrees Celsius in shaded lanes."
+        },
+        {
+          "id": "p3",
+          "text": "Second, trees draw moisture from soil and release water vapor through microscopic leaf pores, a process known as transpiration. Because evaporation requires thermal energy, transpiration cools the surrounding air much like a natural misting system, provided the soil retains adequate water."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r01_q1",
+          "prompt": "What is the main idea of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "Urban trees lower city temperatures through both shading and transpiration.", "explanationTr": "Metin ağaçların gölgeleme ve terleme yoluyla serinletici etkisini anlatır." },
+            { "id": "b", "text": "Rural valleys are always cooler than cities regardless of tree cover.", "explanationTr": "Metin yalnızca akşam saatlerindeki farktan söz eder, genel bir mutlaklık kurmaz." },
+            { "id": "c", "text": "Concrete walls absorb less heat than asphalt roads.", "explanationTr": "İkisi arasında böyle bir karşılaştırma yapılmamıştır." },
+            { "id": "d", "text": "Trees cannot survive in downtown neighborhoods.", "explanationTr": "Metinde böyle bir iddia yoktur." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "İkinci ve üçüncü paragraflar ağaçların sıcaklığı iki yolla (gölgeleme ve terleme) düşürdüğünü açıklar.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r01_q2",
+          "prompt": "In paragraph 2, the word 'intercept' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "reflect upward into space", "explanationTr": "Güneş ışığını yansıtmaktan değil, durdurup kesmekten söz edilir." },
+            { "id": "b", "text": "block before reaching a target", "explanationTr": "Yaprak örtüsünün güneş ışığını asfalta ulaşmadan kesmesini ifade eder." },
+            { "id": "c", "text": "measure with sensors", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "store for winter", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Intercept sunlight before it reaches dark pavement' ifadesinde 'intercept', yoluna çıkıp ulaşmasını engellemek anlamındadır.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r01_q3",
+          "prompt": "Which paragraph provides evidence that cooling by transpiration has an environmental requirement?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1, describing heat stored in asphalt", "explanationTr": "p1 ısı adası etkisini tanımlar." },
+            { "id": "b", "text": "Paragraph p2, describing shaded lanes", "explanationTr": "p2 gölgelemeyi anlatır." },
+            { "id": "c", "text": "Paragraph p3, noting 'provided the soil retains adequate water'", "explanationTr": "p3 terlemenin yeterli toprak nemine bağlı olduğunu belirtir." },
+            { "id": "d", "text": "None of the paragraphs mention any condition", "explanationTr": "p3 açık bir koşul içerir." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Üçüncü paragrafın sonundaki 'provided the soil retains adequate water' koşulu doğrudan kanıt sunar.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r01_q4",
+          "prompt": "Based on paragraph 3, what would likely happen to transpiration cooling during a prolonged drought?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "It would become less effective as soil moisture drops.", "explanationTr": "Terleme yeterli toprak suyuna bağlı olduğundan kuraklıkta etkisi azalır." },
+            { "id": "b", "text": "It would double in speed to compensate.", "explanationTr": "Su azaldığında buharlaşma artmaz." },
+            { "id": "c", "text": "Asphalt would stop absorbing solar radiation.", "explanationTr": "Kuraklığın asfalt üzerindeki etkisi belirtilmemiştir." },
+            { "id": "d", "text": "Leaf pores would turn into solid bark.", "explanationTr": "Metinden çıkarılamaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "p3 terlemenin yeterli toprak nemine bağlı olduğunu söylediği için kuraklıkta bu serinletme etkisi zayıflar.",
+          "evidenceRefId": "p3"
+        }
+      ]
+    },
+    {
+      "id": "read_nat_c1c2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C1",
+      "levelGroup": "C1-C2",
+      "genre": "Natural Sciences",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "Bioluminescent Signaling in Deep-Sea Ecosystems",
+      "tags": ["marine-biology", "evolution"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Below two hundred meters in the open ocean, sunlight fades so precipitously that photosynthesis ceases, yet the water column is far from dark. Surveys using low-light submersibles estimate that more than three-quarters of pelagic organisms inhabiting the mesopelagic zone generate their own light through biochemical reactions."
+        },
+        {
+          "id": "p2",
+          "text": "Far from serving a single evolutionary purpose, bioluminescence operates as a versatile currency of survival. Hatchetfish emit downward blue luminescence calibrated to match the faint overhead downwelling light—a camouflage strategy known as counter-illumination that erases their silhouette from predators gazing upward."
+        },
+        {
+          "id": "p3",
+          "text": "Conversely, certain deep-sea dragonfish possess photophores beneath their eyes that emit far-red wavelengths invisible to nearly all other marine species. Because most deep-ocean eyes detect only blue-green photons, this private wavelength functions as a covert searchlight, illuminating prey without alerting nearby competitors."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r02_q1",
+          "prompt": "Which statement best summarizes the central idea of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "Deep-sea organisms deploy bioluminescence for diverse adaptive functions ranging from camouflage to covert hunting.", "explanationTr": "Metin biyolüminesansın kamuflaj ve gizli avlanma gibi farklı işlevlerini açıklar." },
+            { "id": "b", "text": "Photosynthesis continues weakly at depths below two hundred meters.", "explanationTr": "p1 fotosentezin durduğunu belirtir." },
+            { "id": "c", "text": "All marine species can perceive far-red light wavelengths.", "explanationTr": "p3 tam tersini söyler." },
+            { "id": "d", "text": "Submersibles have mapped every species in the mesopelagic zone.", "explanationTr": "Metin tahminlerden söz eder, tüm türlerin haritalandığını iddia etmez." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Paragraflar biyolüminesansın hem gizlenme (counter-illumination) hem de gizli aydınlatma aracı olarak işlev gördüğünü ortaya koyar.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r02_q2",
+          "prompt": "In paragraph 1, 'precipitously' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "gradually over centuries", "explanationTr": "Ani ve keskin düşüş anlamının tersidir." },
+            { "id": "b", "text": "steeply and rapidly", "explanationTr": "200 metrenin altında ışığın hızla ve dik biçimde azalmasını ifade eder." },
+            { "id": "c", "text": "predictably in cycles", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "artificially", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Güneş ışığının derinlikle birlikte çok hızlı ve keskin biçimde azaldığını vurgular.",
+          "evidenceRefId": "p1"
+        },
+        {
+          "id": "r02_q3",
+          "prompt": "Which paragraph directly supports the claim that bioluminescence can provide an exclusive sensory advantage?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1, citing the percentage of luminous species", "explanationTr": "p1 yaygınlığı verir, özel algı avantajını anlatmaz." },
+            { "id": "b", "text": "Paragraph p2, describing hatchetfish camouflage", "explanationTr": "p2 saklanmayı anlatır." },
+            { "id": "c", "text": "Paragraph p3, explaining the dragonfish's far-red photophores", "explanationTr": "p3 diğer türlerin göremediği uzak-kırmızı ışığın gizli projektör gibi çalıştığını kanıtlar." },
+            { "id": "d", "text": "Paragraph p1, noting the cessation of photosynthesis", "explanationTr": "İlgisiz." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Üçüncü paragraf ejder balığının yalnızca kendisinin algılayabildiği dalga boyunu nasıl kullandığını ayrıntılar.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r02_q4",
+          "prompt": "What can be inferred about a predator adapted to detect only blue-green wavelengths?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "It would fail to notice a dragonfish using its far-red photophores.", "explanationTr": "Uzak-kırmızı dalga boyları çoğu deniz gözünce algılanamadığı için fark edemez." },
+            { "id": "b", "text": "It would easily spot a counter-illuminating hatchetfish from below.", "explanationTr": "Counter-illumination zaten mavi ışığı eşleyerek silueti gizler." },
+            { "id": "c", "text": "It lives exclusively above two hundred meters.", "explanationTr": "Metne göre derin deniz türlerinin çoğu mavi-yeşil algılar." },
+            { "id": "d", "text": "It relies on photosynthesis to locate prey.", "explanationTr": "Anlamsız." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "p3'e göre çoğu derin deniz canlısı uzak-kırmızı ışığı göremediğinden bu ışığı kullanan avcıyı fark edemez.",
+          "evidenceRefId": "p3"
+        }
+      ]
+    },
+    {
+      "id": "read_soc_b1b2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "levelGroup": "B1-B2",
+      "genre": "Social Sciences & History",
+      "targetExams": ["IELTS", "SAT"],
+      "title": "Public Libraries and the Spread of Literacy",
+      "tags": ["history", "civic-institutions"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Before the mid-nineteenth century, most lending libraries charged annual subscription fees that excluded factory workers, apprentices, and rural families. Books were treated largely as private luxuries rather than shared civic resources."
+        },
+        {
+          "id": "p2",
+          "text": "That pattern changed when municipal councils in Britain and North America began funding tax-supported free libraries. Unlike subscription rooms, these institutions allowed any resident to borrow volumes without paying at the door, turning reading into a daily habit across social classes."
+        },
+        {
+          "id": "p3",
+          "text": "Beyond lending novels and manuals, early public libraries hosted evening lectures and kept reading rooms warm during winter. Historians note that attendance often surged during economic downturns, when unemployed residents used reference shelves to learn new trades."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r03_q1",
+          "prompt": "What is the primary focus of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "How tax-funded public libraries broadened access to reading and practical learning", "explanationTr": "Ücretli abonelikten halka açık ücretsiz kütüphanelere geçişin toplumsal etkisini anlatır." },
+            { "id": "b", "text": "Why nineteenth-century novels became shorter", "explanationTr": "Metinde kitap uzunluğundan söz edilmez." },
+            { "id": "c", "text": "How heating systems were invented in Britain", "explanationTr": "Yanlış odak." },
+            { "id": "d", "text": "Why subscription libraries remained cheaper than free ones", "explanationTr": "Metnin söylediğinin tersidir." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Üç paragraf birlikte ücretsiz halk kütüphanelerinin erişimi ve mesleki öğrenmeyi nasıl yaygınlaştırdığını anlatır.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r03_q2",
+          "prompt": "In paragraph 3, 'surged' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "declined steadily", "explanationTr": "Tam tersi anlam." },
+            { "id": "b", "text": "rose sharply", "explanationTr": "Ekonomik durgunluk dönemlerinde ziyaretlerin hızla arttığını belirtir." },
+            { "id": "c", "text": "remained unchanged", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "moved outdoors", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İşsiz kalan kişilerin yeni meslekler öğrenmek için kütüphanelere yönelmesiyle katılımın keskin biçimde arttığını anlatır.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r03_q3",
+          "prompt": "Which part of the passage gives evidence that public libraries supported career retraining?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1 on annual subscription fees", "explanationTr": "p1 erişim engelinden söz eder." },
+            { "id": "b", "text": "Paragraph p2 on municipal councils", "explanationTr": "p2 finansman modelini anlatır." },
+            { "id": "c", "text": "Paragraph p3 noting unemployed residents used reference shelves to learn new trades", "explanationTr": "p3 doğrudan meslek öğrenimi kanıtını sunar." },
+            { "id": "d", "text": "Paragraph p1 on rural families", "explanationTr": "İlgisiz." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Üçüncü paragraf ekonomik durgunluklarda başvuru raflarının yeni meslek öğrenmek için kullanıldığını belirtir.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r03_q4",
+          "prompt": "What can be inferred about subscription libraries prior to the 1850s?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "Their fees acted as an economic barrier for working-class readers.", "explanationTr": "p1 ücretlerin işçileri ve çırakları dışarıda bıraktığını söyler." },
+            { "id": "b", "text": "They were funded directly by municipal taxes.", "explanationTr": "Vergiyle desteklenenler daha sonraki halk kütüphaneleridir." },
+            { "id": "c", "text": "They banned all reference manuals.", "explanationTr": "Metinde böyle bir yasak geçmez." },
+            { "id": "d", "text": "They operated only during summer months.", "explanationTr": "Metinden çıkarılamaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Yıllık abonelik ücretlerinin fabrika işçilerini dışarıda bırakması ekonomik bir engel oluşturduğunu gösterir.",
+          "evidenceRefId": "p1"
+        }
+      ]
+    },
+    {
+      "id": "read_soc_c1c2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C1",
+      "levelGroup": "C1-C2",
+      "genre": "Social Sciences & History",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "Trade Networks Along the Medieval Silk Roads",
+      "tags": ["economic-history", "silk-road"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Popular maps often depict the Silk Roads as a single unbroken highway stretching from Chang'an to the Mediterranean, yet archaeological records reveal a far more decentralized reality. Goods rarely traveled end to end in the hands of one merchant; instead, they changed hands across overlapping regional relays."
+        },
+        {
+          "id": "p2",
+          "text": "Oasis towns such as Samarkand and Kashgar functioned as crucial clearinghouses where Sogdian, Persian, and Turkic intermediaries translated contracts, weighed silver bullion, and repackaged fragile porcelain for mountain passes."
+        },
+        {
+          "id": "p3",
+          "text": "Equally consequential were the unintended exchanges carried alongside textiles and spices. Paper-making techniques, astronomical tables, and drought-resistant crop varieties diffused gradually through these commercial hubs, reshaping agrarian and scholarly life across Afro-Eurasia."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r04_q1",
+          "prompt": "Why does the author mention 'popular maps' in paragraph 1?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "To contrast a simplified image with the multi-stage relay reality of Silk Road trade", "explanationTr": "Tek hatlı otoyol algısı ile çok aşamalı bölgesel aktarma gerçeğini karşılaştırır." },
+            { "id": "b", "text": "To prove Chang'an was larger than Mediterranean ports", "explanationTr": "Böyle bir boyut kıyaslaması yoktur." },
+            { "id": "c", "text": "To argue that sea routes replaced land caravans completely", "explanationTr": "Metin deniz yollarından söz etmez." },
+            { "id": "d", "text": "To criticize Sogdian mapmakers", "explanationTr": "Alakasız." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "İlk paragraf yaygın harita algısını düzelterek İpek Yolu'nun merkezsiz aktarma ağını öne çıkarır.",
+          "evidenceRefId": "p1"
+        },
+        {
+          "id": "r04_q2",
+          "prompt": "In paragraph 3, 'diffused' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "spread outward", "explanationTr": "Tekniklerin ve ürünlerin ticaret merkezleri üzerinden yavaşça yayılmasını ifade eder." },
+            { "id": "b", "text": "vanished abruptly", "explanationTr": "Zıt anlam." },
+            { "id": "c", "text": "remained secret", "explanationTr": "Zıt anlam." },
+            { "id": "d", "text": "collided violently", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Bilgi ve tarım çeşitlerinin ticaret ağları boyunca çevreye yayılmasını anlatır.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r04_q3",
+          "prompt": "Which paragraph supplies direct evidence of the logistical and linguistic services performed in oasis towns?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1", "explanationTr": "p1 genel aktarma yapısını tanıtır." },
+            { "id": "b", "text": "Paragraph p2, detailing contract translation, bullion weighing, and repackaging", "explanationTr": "p2 Semerkant ve Kaşgar'daki somut aracı hizmetleri sıralar." },
+            { "id": "c", "text": "Paragraph p3, discussing drought-resistant crops", "explanationTr": "p3 kültürel/tarımsal yayılımı anlatır." },
+            { "id": "d", "text": "None of the paragraphs mention linguistic roles", "explanationTr": "p2 sözleşme çevirisinden bahseder." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İkinci paragraf sözleşme çevirisi, gümüş tartımı ve yeniden paketleme işlerini doğrudan belirtir.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r04_q4",
+          "prompt": "What can be inferred from paragraph 1 and paragraph 2 about an individual merchant's journey?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "Most merchants operated within regional segments rather than crossing the entire continent.", "explanationTr": "Malların bölgesel aracılar arasında el değiştirmesi tüccarların genelde belirli etaplarda çalıştığını gösterir." },
+            { "id": "b", "text": "Every merchant spoke Persian, Turkic, and Chinese fluently.", "explanationTr": "Çevirmen aracıların varlığı bunun herkes için geçerli olmadığını düşündürür." },
+            { "id": "c", "text": "Porcelain was never transported over mountain passes.", "explanationTr": "p2 dağ geçitleri için yeniden paketlendiğini söyler." },
+            { "id": "d", "text": "Silver bullion was banned in Kashgar.", "explanationTr": "p2 tam tersine tartıldığını belirtir." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Ürünlerin uçtan uca tek tüccarla değil aktarmalarla gitmesi tüccarların bölgesel hatlarda faaliyet gösterdiğini gösterir.",
+          "evidenceRefId": "p1"
+        }
+      ]
+    },
+    {
+      "id": "read_hum_b1b2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "levelGroup": "B1-B2",
+      "genre": "Humanities",
+      "targetExams": ["IELTS", "GENERAL"],
+      "title": "Restoring Faded Frescoes Without Erasing Time",
+      "tags": ["art-conservation", "ethics"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "In centuries past, restoring a damaged wall painting often meant hiring a contemporary artist to paint boldly over missing plaster. While the result looked bright to visitors, it frequently concealed or distorted the original painter's brushwork."
+        },
+        {
+          "id": "p2",
+          "text": "Modern conservators follow a stricter standard called reversibility. Before touching the surface, they map moisture and salt damage with infrared cameras and clean away soot using gentle gels that leave underlying pigments intact."
+        },
+        {
+          "id": "p3",
+          "text": "When small sections of plaster are missing, conservators often fill them with fine vertical brushstrokes known as tratteggio. From across a room, the eye blends the lines seamlessly into the scene; up close, however, viewers can clearly tell original pigment from modern repair."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r05_q1",
+          "prompt": "What is the main theme of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "How modern conservation balances visual repair with honesty toward the original artwork", "explanationTr": "Modern restorasyonun geri döndürülebilirlik ve özgün esere saygı ilkelerini anlatır." },
+            { "id": "b", "text": "Why bright wall paintings are more valuable than faded ones", "explanationTr": "Tam tersine aşırı boyamanın özgün işi bozduğu vurgulanır." },
+            { "id": "c", "text": "How infrared cameras were invented by medieval painters", "explanationTr": "Yanlış bilgi." },
+            { "id": "d", "text": "Why visitors prefer damaged walls over restored ones", "explanationTr": "Metinde böyle bir yargı yoktur." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Metin geçmişteki müdahaleci boyama ile bugünkü geri döndürülebilir ve ayırt edilebilir onarım yöntemini kıyaslar.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r05_q2",
+          "prompt": "In paragraph 2, 'intact' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "undamaged", "explanationTr": "Alttaki boya katmanlarının zarar görmeden korunmasını ifade eder." },
+            { "id": "b", "text": "repainted", "explanationTr": "Bağlama aykırı." },
+            { "id": "c", "text": "hidden", "explanationTr": "Bağlama aykırı." },
+            { "id": "d", "text": "scraped", "explanationTr": "Zıt anlam." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Leave underlying pigments intact' alttaki pigmentleri bozulmamış/sağlam bırakmak demektir.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r05_q3",
+          "prompt": "Which paragraph explains a technique designed to look unified from afar yet remain identifiable nearby?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1", "explanationTr": "p1 eski yöntemleri eleştirir." },
+            { "id": "b", "text": "Paragraph p2", "explanationTr": "p2 görüntüleme ve temizlik jellerini anlatır." },
+            { "id": "c", "text": "Paragraph p3, describing tratteggio vertical brushstrokes", "explanationTr": "p3 uzaktan bütünleşen, yakından ayırt edilen tratteggio tekniğini açıklar." },
+            { "id": "d", "text": "None of the paragraphs", "explanationTr": "p3 açıkça anlatır." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Üçüncü paragraf uzaktan bütünlük, yakından şeffaflık sağlayan tratteggio yöntemini kanıt olarak sunar.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r05_q4",
+          "prompt": "Why is 'reversibility' important to modern conservators?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "Future specialists can remove today's materials if better methods emerge without harming the original work.", "explanationTr": "Geri döndürülebilirlik özgün esere kalıcı hasar vermemeyi sağlar." },
+            { "id": "b", "text": "It lets visitors paint over missing plaster themselves.", "explanationTr": "Alakasız." },
+            { "id": "c", "text": "It speeds up salt crystallization in stone.", "explanationTr": "Tuz hasarı zararlıdır." },
+            { "id": "d", "text": "It removes the need for photography.", "explanationTr": "p2 kızılötesi kamera kullanıldığını söyler." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Özgün pigmenti koruma vurgusu, yapılan müdahalelerin gerektiğinde geri alınabilmesi amacını yansıtır.",
+          "evidenceRefId": "p2"
+        }
+      ]
+    },
+    {
+      "id": "read_hum_c1c2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C2",
+      "levelGroup": "C1-C2",
+      "genre": "Humanities",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "The Epistolary Form in Eighteenth-Century Fiction",
+      "tags": ["literature", "narrative-voice"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Before omniscient third-person narration became the dominant convention of the realist novel, eighteenth-century writers frequently constructed entire narratives out of exchanged letters. This epistolary format placed readers inside an unfolding present rather than a finished past."
+        },
+        {
+          "id": "p2",
+          "text": "Because each correspondent writes without knowing how events will resolve, letters register hesitation, self-deception, and shifting loyalties in real time. A single incident might appear noble in one character's dispatch and manipulative in another's reply."
+        },
+        {
+          "id": "p3",
+          "text": "Critics eventually noted the form's structural strain: maintaining plausible reasons for characters to write long letters during moments of crisis required elaborate coincidences. Yet even after third-person narration prevailed, novelists borrowed the epistolary legacy of interiority and unreliable perspective."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r06_q1",
+          "prompt": "What is the primary purpose of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "To examine both the psychological immediacy and structural limits of epistolary novels", "explanationTr": "Mektup-roman türünün hem anlık psikolojik etkisini hem yapısal sınırlarını değerlendirir." },
+            { "id": "b", "text": "To prove that eighteenth-century postal systems were unreliable", "explanationTr": "Odak posta sistemi değil yazınsal biçimdir." },
+            { "id": "c", "text": "To argue that third-person narration lacks interiority", "explanationTr": "p3 aksine üçüncü tekilin bu mirası devraldığını söyler." },
+            { "id": "d", "text": "To discourage modern authors from writing letters", "explanationTr": "Metinde böyle bir tavsiye yoktur." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Metin epistolary biçimin güçlü yönlerini (anlık belirsizlik, çoklu bakış) ve zorluklarını dengeli biçimde inceler.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r06_q2",
+          "prompt": "In paragraph 3, 'plausible' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "believable", "explanationTr": "Kriz anında karakterlerin mektup yazması için inandırıcı gerekçeler bulmayı ifade eder." },
+            { "id": "b", "text": "profitable", "explanationTr": "Bağlama uymaz." },
+            { "id": "c", "text": "decorative", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "anonymous", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Plausible reasons' okurun ikna olabileceği, makul/inandırıcı nedenler anlamına gelir.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r06_q3",
+          "prompt": "Which paragraph offers evidence that epistolary fiction exposes conflicting interpretations of the same event?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1", "explanationTr": "p1 şimdiki zaman etkisinden söz eder." },
+            { "id": "b", "text": "Paragraph p2, contrasting one character's dispatch with another's reply", "explanationTr": "p2 aynı olayın bir mektupta soylu, yanıtta çıkarcı görünebileceğini belirtir." },
+            { "id": "c", "text": "Paragraph p3, noting elaborate coincidences", "explanationTr": "p3 yapısal zorluğu anlatır." },
+            { "id": "d", "text": "Paragraph p1, mentioning third-person narration", "explanationTr": "İlgisiz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İkinci paragraf farklı mektupların aynı olayı çelişen biçimlerde yorumlamasını doğrudan örneklendirir.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r06_q4",
+          "prompt": "What does the author imply about omniscient third-person fiction after the decline of epistolary novels?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "It absorbed techniques for depicting inner thought and subjective bias developed in letter novels.", "explanationTr": "p3 son cümlesinde romancıların bu içsellik ve güvenilmez bakış mirasını ödünç aldığını söyler." },
+            { "id": "b", "text": "It eliminated character conflict altogether.", "explanationTr": "Metinden çıkarılamaz." },
+            { "id": "c", "text": "It relied solely on official historical archives.", "explanationTr": "Metinde geçmez." },
+            { "id": "d", "text": "It forbade unreliable perspectives.", "explanationTr": "Tam tersi." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "p3'e göre üçüncü şahıs anlatım egemen olduktan sonra bile mektup-romanın içsellik mirası sürdürülmüştür.",
+          "evidenceRefId": "p3"
+        }
+      ]
+    },
+    {
+      "id": "read_tech_b1b2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "levelGroup": "B1-B2",
+      "genre": "Technology & AI",
+      "targetExams": ["IELTS", "GENERAL"],
+      "title": "Why Edge Computing Matters for Everyday Sensors",
+      "tags": ["computing", "latency"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "When millions of smart thermostats, factory sensors, and wearable watches stream raw readings to distant cloud servers, networks face congestion and noticeable delays. Even a half-second lag can be unacceptable for collision alerts in automated vehicles."
+        },
+        {
+          "id": "p2",
+          "text": "Edge computing addresses this bottleneck by processing urgent data directly on the device or a nearby local gateway. Instead of uploading every video frame or vibration sample, the sensor filters routine noise locally and transmits only meaningful summaries."
+        },
+        {
+          "id": "p3",
+          "text": "Local processing also strengthens privacy. Sensitive voice commands or home camera footage need not leave the household network just to trigger a simple light switch, reducing exposure during transit."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r07_q1",
+          "prompt": "What is the main idea of the passage?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "Processing data near the device reduces network delay, bandwidth use, and privacy risk.", "explanationTr": "Metin uç bilişimin gecikme, veri trafiği ve gizlilik faydalarını açıklar." },
+            { "id": "b", "text": "Cloud servers are no longer used by any modern applications.", "explanationTr": "Metin yalnızca ham akışın tamamını göndermenin sorununu vurgular." },
+            { "id": "c", "text": "Automated vehicles rely solely on smart thermostats.", "explanationTr": "Anlamsız." },
+            { "id": "d", "text": "Edge computing makes home networks slower.", "explanationTr": "Tam tersini anlatır." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Üç paragraf yerel işlemenin hız, bant genişliği ve gizlilik avantajlarını ortaya koyar.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r07_q2",
+          "prompt": "In paragraph 2, 'bottleneck' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "a point of congestion slowing a system", "explanationTr": "Ağ tıkanıklığı ve gecikme oluşturan darboğazı ifade eder." },
+            { "id": "b", "text": "a glass container", "explanationTr": "Mecazi bağlamda kullanılmıştır." },
+            { "id": "c", "text": "a power cable", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "a software upgrade", "explanationTr": "Bağlama uymaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "İlk paragraftaki ağ tıkanıklığı ve gecikme sorununu özetleyen darboğaz anlamına gelir.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r07_q3",
+          "prompt": "Which paragraph gives evidence that edge computing can keep personal audio inside a home network?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1", "explanationTr": "p1 gecikmeden söz eder." },
+            { "id": "b", "text": "Paragraph p2", "explanationTr": "p2 gürültü filtrelemeden söz eder." },
+            { "id": "c", "text": "Paragraph p3, mentioning sensitive voice commands stay on the household network", "explanationTr": "p3 ses komutlarının ev ağından çıkmadan işlenmesini kanıtlar." },
+            { "id": "d", "text": "Paragraph p1, mentioning factories", "explanationTr": "İlgisiz." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Üçüncü paragraf hassas ses komutlarının basit bir ışık açma işlemi için ev dışına çıkmasına gerek olmadığını belirtir.",
+          "evidenceRefId": "p3"
+        },
+        {
+          "id": "r07_q4",
+          "prompt": "What can be inferred about cloud servers in an edge-assisted architecture?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "They receive filtered summaries rather than every raw sensor reading.", "explanationTr": "p2 cihazların yalnızca anlamlı özetleri ilettiğini söyler." },
+            { "id": "b", "text": "They operate inside wearable watches.", "explanationTr": "Metne aykırı." },
+            { "id": "c", "text": "They never store any historical metrics.", "explanationTr": "Metinden çıkarılamaz." },
+            { "id": "d", "text": "They increase collision alert speed.", "explanationTr": "p1 uzak sunucuların gecikmeye yol açtığını söyler." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Sensörlerin rutin veriyi yerelde süzüp yalnızca özet göndermesi bulut yükünü azaltır.",
+          "evidenceRefId": "p2"
+        }
+      ]
+    },
+    {
+      "id": "read_tech_c1c2",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C1",
+      "levelGroup": "C1-C2",
+      "genre": "Technology & AI",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "Evaluating Benchmarks for Language Models",
+      "tags": ["ai-evaluation", "methodology"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "paragraphs": [
+        {
+          "id": "p1",
+          "text": "Standardized benchmarks have long propelled machine learning forward by offering researchers a shared yardstick. Yet when evaluation datasets circulate publicly on the web, models trained on massive internet scrapes risk memorizing test items rather than acquiring transferable reasoning."
+        },
+        {
+          "id": "p2",
+          "text": "This phenomenon, termed data contamination, can inflate benchmark scores while masking brittle performance on novel phrasing. Changing a few numbers in a math word problem or rewording an idiom sometimes causes an apparently high-scoring system to stumble."
+        },
+        {
+          "id": "p3",
+          "text": "To obtain more faithful measurements, evaluation teams increasingly rely on dynamic, held-out test suites refreshed after each model release, alongside human audits that check whether answers rest on genuine inference or surface pattern matching."
+        }
+      ],
+      "questions": [
+        {
+          "id": "r08_q1",
+          "prompt": "What central problem does the passage examine?",
+          "questionType": "Main Idea",
+          "options": [
+            { "id": "a", "text": "Public benchmark contamination can overstate model capability, prompting dynamic evaluation methods.", "explanationTr": "Veri kirlenmesinin puanları şişirebileceğini ve dinamik testlere neden ihtiyaç duyulduğunu anlatır." },
+            { "id": "b", "text": "Standardized benchmarks have never helped machine learning.", "explanationTr": "p1 ilk cümlede ilerlemeye katkı sağladıklarını söyler." },
+            { "id": "c", "text": "Models fail exclusively on numerical arithmetic.", "explanationTr": "p2 deyimlerin yeniden yazılmasından da söz eder." },
+            { "id": "d", "text": "Human audits have replaced automated testing entirely.", "explanationTr": "p3 'alongside' diyerek ikisinin birlikte kullanıldığını belirtir." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Metin veri kirlenmesi sorununu ve buna karşı geliştirilen dinamik, gizli test yaklaşımlarını açıklar.",
+          "evidenceRefId": "p1"
+        },
+        {
+          "id": "r08_q2",
+          "prompt": "In paragraph 2, 'brittle' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "fragile under slight variation", "explanationTr": "İfade değişince kolayca bozulan kırılgan performansı anlatır." },
+            { "id": "b", "text": "exceptionally rapid", "explanationTr": "Bağlama uymaz." },
+            { "id": "c", "text": "transparent", "explanationTr": "Bağlama uymaz." },
+            { "id": "d", "text": "permanently fixed", "explanationTr": "Zıt anlam." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Küçük değişikliklerde tökezleyen, dayanıksız/kırılgan performansı tanımlar.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r08_q3",
+          "prompt": "Which paragraph provides evidence of how minor alterations reveal memorized test answers?",
+          "questionType": "Command of Evidence",
+          "options": [
+            { "id": "a", "text": "Paragraph p1", "explanationTr": "p1 genel riski tanıtır." },
+            { "id": "b", "text": "Paragraph p2, citing changed numbers or reworded idioms causing systems to stumble", "explanationTr": "p2 küçük değişikliklerin kırılganlığı nasıl ortaya çıkardığını gösterir." },
+            { "id": "c", "text": "Paragraph p3", "explanationTr": "p3 çözümü anlatır." },
+            { "id": "d", "text": "None of the paragraphs", "explanationTr": "p2 açık örnek verir." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İkinci paragraftaki sayı veya deyim değişikliği örneği doğrudan kanıttır.",
+          "evidenceRefId": "p2"
+        },
+        {
+          "id": "r08_q4",
+          "prompt": "Why does refreshing held-out test suites after each release mitigate data contamination?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "New items could not have been present in the training data of previously released models.", "explanationTr": "Sürüm sonrası yenilenen ve gizli tutulan sorular eğitim verisine sızmamış olur." },
+            { "id": "b", "text": "It eliminates the need for internet access during training.", "explanationTr": "İlgisiz." },
+            { "id": "c", "text": "It guarantees every model scores 100 percent.", "explanationTr": "Tam tersi, şişirilmiş puanları önler." },
+            { "id": "d", "text": "It removes all idioms from language.", "explanationTr": "Anlamsız." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Gizli ve düzenli yenilenen testler modelin eğitim aşamasında soruları ezberlemesini engeller.",
+          "evidenceRefId": "p3"
+        }
+      ]
+    }
+  ]
+}

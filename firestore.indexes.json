@@ -1,0 +1,36 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "contexts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "vocabularyId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "reviewStates",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "dueAtEpochMillis", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "studySessions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "dateKey", "order": "DESCENDING" },
+        { "fieldPath": "completedAtEpochMillis", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "attempts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "moduleType", "order": "ASCENDING" },
+        { "fieldPath": "answeredAtEpochMillis", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

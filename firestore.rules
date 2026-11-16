@@ -1,0 +1,290 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Global Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidTimestamp(ts) {
+      return ts is timestamp && ts <= request.time;
+    }
+
+    function isValidTargetExam(exam) {
+      return exam in ['GENERAL', 'SAT', 'IELTS', 'AP_ACADEMIC'];
+    }
+
+    function isValidCefrLevel(level) {
+      return level in ['B1', 'B2', 'C1', 'C2'];
+    }
+
+    // --- Validation Helpers ---
+    function isValidUserProfile(data, userId) {
+      return data.userId == userId &&
+             isValidTargetExam(data.targetExam) &&
+             isValidCefrLevel(data.cefrLevel) &&
+             data.dailyGoalMinutes is int && data.dailyGoalMinutes >= 5 && data.dailyGoalMinutes <= 240 &&
+             data.onboardingCompleted is bool &&
+             (!('displayName' in data) || (data.displayName is string && data.displayName.size() <= 120)) &&
+             (!('email' in data) || (data.email is string && data.email.size() <= 200)) &&
+             isValidTimestamp(data.createdAt) &&
+             isValidTimestamp(data.updatedAt);
+    }
+
+    function isValidVocabulary(data, userId) {
+      return data.userId == userId &&
+             data.expression is string && data.expression.size() >= 1 && data.expression.size() <= 200 &&
+             data.normalizedExpression is string && data.normalizedExpression.size() >= 1 && data.normalizedExpression.size() <= 200 &&
+             (!('meaningTr' in data) || (data.meaningTr is string && data.meaningTr.size() <= 500)) &&
+             (!('definitionEn' in data) || (data.definitionEn is string && data.definitionEn.size() <= 500)) &&
+             (!('partOfSpeech' in data) || (data.partOfSpeech is string && data.partOfSpeech.size() <= 40)) &&
+             (!('personalNote' in data) || (data.personalNote is string && data.personalNote.size() <= 1000)) &&
+             data.tags is list && data.tags.size() <= 10 && (data.tags.size() == 0 || data.tags[0] is string) &&
+             data.favorite is bool &&
+             isValidTimestamp(data.createdAt) &&
+             isValidTimestamp(data.updatedAt);
+    }
+
+    function isValidContextExample(data, userId) {
+      return data.userId == userId &&
+             isValidId(data.vocabularyId) &&
+             data.sentence is string && data.sentence.size() >= 1 && data.sentence.size() <= 1000 &&
+             data.sourceType in ['VIDEO', 'ARTICLE', 'BOOK', 'PODCAST', 'READING', 'LISTENING', 'OVERLAY', 'VOICE', 'MANUAL'] &&
+             (!('sourceTitle' in data) || (data.sourceTitle is string && data.sourceTitle.size() <= 200)) &&
+             (!('optionalSourceUrl' in data) || (data.optionalSourceUrl is string && data.optionalSourceUrl.size() <= 500)) &&
+             (!('optionalTimestampSeconds' in data) || (data.optionalTimestampSeconds is int && data.optionalTimestampSeconds >= 0 && data.optionalTimestampSeconds <= 86400)) &&
+             isValidTimestamp(data.createdAt) &&
+             isValidTimestamp(data.updatedAt);
+    }
+
+    function isValidReviewState(data, userId, vocabularyId) {
+      return data.userId == userId &&
+             data.vocabularyId == vocabularyId &&
+             data.dueAtEpochMillis is int && data.dueAtEpochMillis >= 0 &&
+             data.intervalDays is int && data.intervalDays >= 0 && data.intervalDays <= 36500 &&
+             (data.easeFactor is float || data.easeFactor is int) && data.easeFactor >= 1.3 && data.easeFactor <= 5.0 &&
+             data.repetitionCount is int && data.repetitionCount >= 0 && data.repetitionCount <= 10000 &&
+             data.lapseCount is int && data.lapseCount >= 0 && data.lapseCount <= 10000 &&
+             (!('lastReviewedAtEpochMillis' in data) || (data.lastReviewedAtEpochMillis is int && data.lastReviewedAtEpochMillis >= 0)) &&
+             isValidTimestamp(data.createdAt) &&
+             isValidTimestamp(data.updatedAt);
+    }
+
+    function isValidReviewEvent(data, userId, eventId) {
+      return data.userId == userId &&
+             data.eventId == eventId &&
+             isValidId(data.vocabularyId) &&
+             data.rating in ['AGAIN', 'HARD', 'GOOD', 'EASY'] &&
+             data.previousIntervalDays is int && data.previousIntervalDays >= 0 &&
+             data.newIntervalDays is int && data.newIntervalDays >= 0 &&
+             data.reviewedAtEpochMillis is int && data.reviewedAtEpochMillis >= 0 &&
+             isValidTimestamp(data.createdAt);
+    }
+
+    function isValidStudySession(data, userId) {
+      return data.userId == userId &&
+             data.moduleType in ['FLASHCARD', 'GRAMMAR', 'READING', 'LISTENING'] &&
+             data.topicOrContentId is string && data.topicOrContentId.size() >= 1 && data.topicOrContentId.size() <= 128 &&
+             data.durationSeconds is int && data.durationSeconds >= 0 && data.durationSeconds <= 28800 &&
+             data.totalItems is int && data.totalItems >= 0 && data.totalItems <= 500 &&
+             data.correctCount is int && data.correctCount >= 0 && data.correctCount <= data.totalItems &&
+             data.dateKey is string && data.dateKey.size() >= 8 && data.dateKey.size() <= 20 &&
+             data.startedAtEpochMillis is int && data.startedAtEpochMillis >= 0 &&
+             data.completedAtEpochMillis is int && data.completedAtEpochMillis >= data.startedAtEpochMillis &&
+             isValidTimestamp(data.createdAt);
+    }
+
+    function isValidAttempt(data, userId) {
+      return data.userId == userId &&
+             data.moduleType in ['GRAMMAR', 'READING', 'LISTENING'] &&
+             data.contentId is string && data.contentId.size() >= 1 && data.contentId.size() <= 128 &&
+             data.questionId is string && data.questionId.size() >= 1 && data.questionId.size() <= 128 &&
+             (!('questionType' in data) || (data.questionType is string && data.questionType.size() <= 64)) &&
+             (!('topicId' in data) || (data.topicId is string && data.topicId.size() <= 128)) &&
+             data.selectedOptionId is string && data.selectedOptionId.size() >= 1 && data.selectedOptionId.size() <= 64 &&
+             data.correctOptionId is string && data.correctOptionId.size() >= 1 && data.correctOptionId.size() <= 64 &&
+             data.isCorrect is bool &&
+             data.answeredAtEpochMillis is int && data.answeredAtEpochMillis >= 0 &&
+             isValidTimestamp(data.createdAt);
+    }
+
+    function isValidUserSettings(data, userId) {
+      return data.userId == userId &&
+             data.language in ['tr', 'en'] &&
+             data.themeMode in ['SYSTEM', 'LIGHT', 'DARK'] &&
+             data.dailyGoalMinutes is int && data.dailyGoalMinutes >= 5 && data.dailyGoalMinutes <= 240 &&
+             isValidTargetExam(data.targetExam) &&
+             isValidCefrLevel(data.cefrLevel) &&
+             (data.overlayScale is float || data.overlayScale is int) && data.overlayScale >= 0.7 && data.overlayScale <= 1.5 &&
+             (data.overlayAlpha is float || data.overlayAlpha is int) && data.overlayAlpha >= 0.4 && data.overlayAlpha <= 1.0 &&
+             data.readingFontSizeSp is int && data.readingFontSizeSp >= 14 && data.readingFontSizeSp <= 28 &&
+             isValidTimestamp(data.createdAt) &&
+             isValidTimestamp(data.updatedAt);
+    }
+
+    // --- User Profile & Subcollections ---
+    match /users/{userId} {
+      allow get: if isOwner(userId) && isValidId(userId);
+      allow list: if false;
+      allow create: if isOwner(userId) &&
+                       isValidId(userId) &&
+                       incoming().keys().hasAll(['userId', 'targetExam', 'cefrLevel', 'dailyGoalMinutes', 'onboardingCompleted', 'createdAt', 'updatedAt']) &&
+                       incoming().keys().hasOnly(['userId', 'displayName', 'email', 'targetExam', 'cefrLevel', 'dailyGoalMinutes', 'onboardingCompleted', 'createdAt', 'updatedAt']) &&
+                       isValidUserProfile(incoming(), userId);
+      allow update: if isOwner(userId) &&
+                       isValidId(userId) &&
+                       isValidUserProfile(incoming(), userId) &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'email', 'targetExam', 'cefrLevel', 'dailyGoalMinutes', 'onboardingCompleted', 'updatedAt']);
+      allow delete: if isOwner(userId) && isValidId(userId);
+
+      match /vocabulary/{vocabularyId} {
+        allow get: if isOwner(userId) && isValidId(vocabularyId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(vocabularyId) &&
+                         incoming().keys().hasAll(['userId', 'expression', 'normalizedExpression', 'tags', 'favorite', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'expression', 'normalizedExpression', 'meaningTr', 'definitionEn', 'partOfSpeech', 'personalNote', 'tags', 'favorite', 'createdAt', 'updatedAt']) &&
+                         isValidVocabulary(incoming(), userId);
+        allow update: if isOwner(userId) &&
+                         isValidId(vocabularyId) &&
+                         isValidVocabulary(incoming(), userId) &&
+                         incoming().userId == existing().userId &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['expression', 'normalizedExpression', 'meaningTr', 'definitionEn', 'partOfSpeech', 'personalNote', 'tags', 'favorite', 'updatedAt']);
+        allow delete: if isOwner(userId) && isValidId(vocabularyId);
+      }
+
+      match /contexts/{contextId} {
+        allow get: if isOwner(userId) && isValidId(contextId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(contextId) &&
+                         incoming().keys().hasAll(['userId', 'vocabularyId', 'sentence', 'sourceType', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'vocabularyId', 'sentence', 'sourceTitle', 'sourceType', 'optionalSourceUrl', 'optionalTimestampSeconds', 'createdAt', 'updatedAt']) &&
+                         isValidContextExample(incoming(), userId);
+        allow update: if isOwner(userId) &&
+                         isValidId(contextId) &&
+                         isValidContextExample(incoming(), userId) &&
+                         incoming().userId == existing().userId &&
+                         incoming().vocabularyId == existing().vocabularyId &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['sentence', 'sourceTitle', 'sourceType', 'optionalSourceUrl', 'optionalTimestampSeconds', 'updatedAt']);
+        allow delete: if isOwner(userId) && isValidId(contextId);
+      }
+
+      match /reviewStates/{vocabularyId} {
+        allow get: if isOwner(userId) && isValidId(vocabularyId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(vocabularyId) &&
+                         incoming().keys().hasAll(['userId', 'vocabularyId', 'dueAtEpochMillis', 'intervalDays', 'easeFactor', 'repetitionCount', 'lapseCount', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'vocabularyId', 'dueAtEpochMillis', 'intervalDays', 'easeFactor', 'repetitionCount', 'lapseCount', 'lastReviewedAtEpochMillis', 'createdAt', 'updatedAt']) &&
+                         isValidReviewState(incoming(), userId, vocabularyId);
+        allow update: if isOwner(userId) &&
+                         isValidId(vocabularyId) &&
+                         isValidReviewState(incoming(), userId, vocabularyId) &&
+                         incoming().userId == existing().userId &&
+                         incoming().vocabularyId == existing().vocabularyId &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['dueAtEpochMillis', 'intervalDays', 'easeFactor', 'repetitionCount', 'lapseCount', 'lastReviewedAtEpochMillis', 'updatedAt']);
+        allow delete: if isOwner(userId) && isValidId(vocabularyId);
+      }
+
+      match /reviewEvents/{eventId} {
+        allow get: if isOwner(userId) && isValidId(eventId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(eventId) &&
+                         incoming().keys().hasAll(['userId', 'eventId', 'vocabularyId', 'rating', 'previousIntervalDays', 'newIntervalDays', 'reviewedAtEpochMillis', 'createdAt']) &&
+                         incoming().keys().hasOnly(['userId', 'eventId', 'vocabularyId', 'rating', 'previousIntervalDays', 'newIntervalDays', 'reviewedAtEpochMillis', 'createdAt']) &&
+                         isValidReviewEvent(incoming(), userId, eventId);
+        allow update: if false;
+        allow delete: if isOwner(userId) && isValidId(eventId);
+      }
+
+      match /studySessions/{sessionId} {
+        allow get: if isOwner(userId) && isValidId(sessionId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(sessionId) &&
+                         incoming().keys().hasAll(['userId', 'moduleType', 'topicOrContentId', 'durationSeconds', 'totalItems', 'correctCount', 'dateKey', 'startedAtEpochMillis', 'completedAtEpochMillis', 'createdAt']) &&
+                         incoming().keys().hasOnly(['userId', 'moduleType', 'topicOrContentId', 'durationSeconds', 'totalItems', 'correctCount', 'dateKey', 'startedAtEpochMillis', 'completedAtEpochMillis', 'createdAt']) &&
+                         isValidStudySession(incoming(), userId);
+        allow update: if false;
+        allow delete: if isOwner(userId) && isValidId(sessionId);
+      }
+
+      match /attempts/{attemptId} {
+        allow get: if isOwner(userId) && isValidId(attemptId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(attemptId) &&
+                         incoming().keys().hasAll(['userId', 'moduleType', 'contentId', 'questionId', 'selectedOptionId', 'correctOptionId', 'isCorrect', 'answeredAtEpochMillis', 'createdAt']) &&
+                         incoming().keys().hasOnly(['userId', 'moduleType', 'contentId', 'questionId', 'questionType', 'topicId', 'selectedOptionId', 'correctOptionId', 'isCorrect', 'answeredAtEpochMillis', 'createdAt']) &&
+                         isValidAttempt(incoming(), userId);
+        allow update: if false;
+        allow delete: if isOwner(userId) && isValidId(attemptId);
+      }
+
+      match /settings/{settingId} {
+        allow get: if isOwner(userId) && isValidId(settingId);
+        allow list: if isOwner(userId);
+        allow create: if isOwner(userId) &&
+                         isValidId(settingId) &&
+                         incoming().keys().hasAll(['userId', 'language', 'themeMode', 'dailyGoalMinutes', 'targetExam', 'cefrLevel', 'overlayScale', 'overlayAlpha', 'readingFontSizeSp', 'createdAt', 'updatedAt']) &&
+                         incoming().keys().hasOnly(['userId', 'language', 'themeMode', 'dailyGoalMinutes', 'targetExam', 'cefrLevel', 'overlayScale', 'overlayAlpha', 'readingFontSizeSp', 'createdAt', 'updatedAt']) &&
+                         isValidUserSettings(incoming(), userId);
+        allow update: if isOwner(userId) &&
+                         isValidId(settingId) &&
+                         isValidUserSettings(incoming(), userId) &&
+                         incoming().userId == existing().userId &&
+                         incoming().createdAt == existing().createdAt &&
+                         incoming().diff(existing()).affectedKeys().hasOnly(['language', 'themeMode', 'dailyGoalMinutes', 'targetExam', 'cefrLevel', 'overlayScale', 'overlayAlpha', 'readingFontSizeSp', 'updatedAt']);
+        allow delete: if isOwner(userId) && isValidId(settingId);
+      }
+    }
+
+    // --- Published Curriculum Content (Read-only for signed-in clients; no mobile writes) ---
+    match /contentGrammar/{contentId} {
+      allow get: if isSignedIn() && isValidId(contentId) && resource.data.status == 'published';
+      allow list: if isSignedIn() && resource.data.status == 'published';
+      allow create, update, delete: if false;
+    }
+
+    match /contentReading/{contentId} {
+      allow get: if isSignedIn() && isValidId(contentId) && resource.data.status == 'published';
+      allow list: if isSignedIn() && resource.data.status == 'published';
+      allow create, update, delete: if false;
+    }
+
+    match /contentListening/{contentId} {
+      allow get: if isSignedIn() && isValidId(contentId) && resource.data.status == 'published';
+      allow list: if isSignedIn() && resource.data.status == 'published';
+      allow create, update, delete: if false;
+    }
+  }
+}

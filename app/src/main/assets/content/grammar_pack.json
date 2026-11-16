@@ -1,0 +1,1114 @@
+{
+  "topics": [
+    {
+      "id": "gram_01_sentence_structure",
+      "orderIndex": 1,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "SAT", "IELTS", "AP_ACADEMIC"],
+      "title": "Sentence Structure",
+      "titleTr": "Cümle Yapısı",
+      "tags": ["syntax", "clauses"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "İngilizce bağımsız bir cümle en az bir özne ve çekimli bir yüklem içerir. İki bağımsız cümle yalnızca virgülle birleştirilemez (comma splice); bağlaç, noktalı virgül veya nokta gerekir.",
+      "summaryEn": "An independent English clause requires at least a subject and a finite verb. Two independent clauses cannot be joined with a comma alone.",
+      "commonMistakesTr": [
+        "İki tam cümleyi yalnızca virgül ile ayırmak (comma splice).",
+        "Yan cümleyi (although/because ile başlayan) tek başına tam cümle gibi bırakmak (fragment)."
+      ],
+      "examples": [
+        {
+          "correct": "Although the experiment took weeks, the results were clear.",
+          "incorrect": "Although the experiment took weeks. The results were clear.",
+          "noteTr": "Although ile başlayan yan cümle tek başına cümle olamaz."
+        },
+        {
+          "correct": "The library closes at nine; therefore, we left early.",
+          "incorrect": "The library closes at nine, therefore, we left early.",
+          "noteTr": "Therefore bir zarftır; iki bağımsız cümleyi birleştirmek için noktalı virgül gerekir."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g01_q1",
+          "prompt": "Choose the grammatically complete sentence:",
+          "questionType": "Sentence Boundaries",
+          "options": [
+            { "id": "a", "text": "Because the data was incomplete, the team repeated the trial.", "explanationTr": "Yan cümle ve ana cümle doğru biçimde birleştirilmiştir." },
+            { "id": "b", "text": "Because the data was incomplete. The team repeated the trial.", "explanationTr": "'Because...' bölümü tek başına bırakıldığı için eksik cümledir (fragment)." },
+            { "id": "c", "text": "The data was incomplete, the team repeated the trial.", "explanationTr": "İki bağımsız cümle yalnızca virgülle birleştirilmiş (comma splice)." },
+            { "id": "d", "text": "Repeating the trial because of the incomplete data.", "explanationTr": "Çekimli ana yüklem eksik." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Because' yan cümlesi virgülle ana cümleye bağlandığında tam ve kurallı bir yapı oluşur."
+        },
+        {
+          "id": "g01_q2",
+          "prompt": "Select the option that avoids a comma splice:",
+          "questionType": "Sentence Boundaries",
+          "options": [
+            { "id": "a", "text": "Solar panels generate clean power, they also reduce bills.", "explanationTr": "İki tam cümle arasında yalnızca virgül var." },
+            { "id": "b", "text": "Solar panels generate clean power; moreover, they reduce bills.", "explanationTr": "Noktalı virgül ve geçiş zarfı doğru kullanılmış." },
+            { "id": "c", "text": "Solar panels generate clean power, however, they cost more initially.", "explanationTr": "'However' öncesinde noktalı virgül veya nokta gerekir." },
+            { "id": "d", "text": "Solar panels generating clean power and reducing bills.", "explanationTr": "Çekimli yüklem yok." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İki bağımsız cümle '; moreover,' ile doğru biçimde birleştirilmiştir."
+        },
+        {
+          "id": "g01_q3",
+          "prompt": "Which sentence places the modifier clearly without creating a fragment?",
+          "questionType": "Clauses",
+          "options": [
+            { "id": "a", "text": "While reviewing the draft, several typos caught my eye.", "explanationTr": "Hatalı özne: 'several typos' taslağı inceleyemez." },
+            { "id": "b", "text": "While reviewing the draft, I noticed several typos.", "explanationTr": "Açılış ifadesi doğru özne olan 'I' ile eşleşir." },
+            { "id": "c", "text": "Reviewing the draft carefully and noting several typos.", "explanationTr": "Tam cümle değil, yüklem eksik." },
+            { "id": "d", "text": "I reviewed the draft, I noticed several typos.", "explanationTr": "Virgül hatası (comma splice)." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Zarf-fiil öbeğinin öznesi ile ana cümlenin öznesi ('I') uyumludur."
+        }
+      ]
+    },
+    {
+      "id": "gram_02_present_tenses",
+      "orderIndex": 2,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "IELTS"],
+      "title": "Present Tenses",
+      "titleTr": "Şimdiki ve Geniş Zamanlar",
+      "tags": ["tense", "present"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Simple Present genel doğrular ve alışkanlıklar; Present Continuous konuşma anındaki geçici süreçler; Present Perfect ise geçmişte başlayıp bugünü etkileyen durumlar için kullanılır.",
+      "summaryEn": "Use Simple Present for facts and routines, Present Continuous for temporary ongoing actions, and Present Perfect for actions connected to the present.",
+      "commonMistakesTr": [
+        "Durum fiillerini (know, believe, own) sürekli kipte (-ing) kullanmak.",
+        "'Since' veya 'for' ile geçmişten bugüne süren eylemlerde Simple Present kullanmak."
+      ],
+      "examples": [
+        {
+          "correct": "She has lived in Ankara since 2021.",
+          "incorrect": "She is living in Ankara since 2021.",
+          "noteTr": "Since + başlangıç noktası Present Perfect gerektirir."
+        },
+        {
+          "correct": "I know the answer now.",
+          "incorrect": "I am knowing the answer now.",
+          "noteTr": "Know durum fiilidir, continuous formda kullanılmaz."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g02_q1",
+          "prompt": "Dr. Patel ____ climate patterns in the Arctic for over a decade.",
+          "questionType": "Tense Selection",
+          "options": [
+            { "id": "a", "text": "studies", "explanationTr": "'for over a decade' geçmişten bugüne süren zamanı vurgular." },
+            { "id": "b", "text": "has studied", "explanationTr": "On yılı aşkın süredir devam eden çalışma için Present Perfect uygundur." },
+            { "id": "c", "text": "is studying", "explanationTr": "Süre belirten 'for over a decade' ile tek başına uyuşmaz." },
+            { "id": "d", "text": "was study", "explanationTr": "Dilbilgisel olarak hatalı yapı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'For over a decade' geçmişte başlayıp hâlen süren eylemleri gösterdiği için Present Perfect gerekir."
+        },
+        {
+          "id": "g02_q2",
+          "prompt": "This week, the laboratory ____ a new calibration method before resuming normal tests.",
+          "questionType": "Tense Selection",
+          "options": [
+            { "id": "a", "text": "is testing", "explanationTr": "'This week' geçici bir süreci anlattığı için Present Continuous doğrudur." },
+            { "id": "b", "text": "tests", "explanationTr": "Kalıcı rutin yerine bu haftaya özgü geçici durum vurgulanıyor." },
+            { "id": "c", "text": "has been test", "explanationTr": "Eksik/yanlış fiil çekimi." },
+            { "id": "d", "text": "test", "explanationTr": "Tekil özneyle özne-yüklem uyumsuzluğu var." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Geçici dönemlerde ('this week') Present Continuous kullanılır."
+        },
+        {
+          "id": "g02_q3",
+          "prompt": "Most economists ____ that inflation responds slowly to policy shifts.",
+          "questionType": "Stative Verbs",
+          "options": [
+            { "id": "a", "text": "are believing", "explanationTr": "'Believe' durum fiilidir; -ing almaz." },
+            { "id": "b", "text": "believe", "explanationTr": "Genel bir kanı ve durum fiili Simple Present ile verilir." },
+            { "id": "c", "text": "believing", "explanationTr": "Yardımcı fiilsiz çekimsiz yapı." },
+            { "id": "d", "text": "has believed", "explanationTr": "Çoğul özne 'most economists' ile tekil 'has' uyumsuz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Believe' durum fiili olduğu ve çoğul özneyle kullanıldığı için 'believe' doğrudur."
+        }
+      ]
+    },
+    {
+      "id": "gram_03_past_tenses",
+      "orderIndex": 3,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "IELTS", "SAT"],
+      "title": "Past Tenses",
+      "titleTr": "Geçmiş Zamanlar",
+      "tags": ["tense", "past"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Simple Past belirli bir geçmiş zamanda tamamlanan olayları, Past Continuous geçmişte süren arka plan eylemlerini, Past Perfect ise geçmişteki bir olaydan daha önce gerçekleşen eylemi anlatır.",
+      "summaryEn": "Simple Past describes completed past events, Past Continuous sets background actions, and Past Perfect marks an earlier past action.",
+      "commonMistakesTr": [
+        "Belirli bir geçmiş tarih (in 2019, yesterday) varken Present Perfect kullanmak.",
+        "İki geçmiş olaydan önce olanı belirtirken Past Perfect'i ihmal etmek."
+      ],
+      "examples": [
+        {
+          "correct": "By the time the train arrived, we had bought the tickets.",
+          "incorrect": "By the time the train arrived, we have bought the tickets.",
+          "noteTr": "Geçmişteki referans noktasından önce olan eylem Past Perfect ister."
+        },
+        {
+          "correct": "The journal published the study in 2020.",
+          "incorrect": "The journal has published the study in 2020.",
+          "noteTr": "Kesin geçmiş tarih ('in 2020') Simple Past gerektirir."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g03_q1",
+          "prompt": "When the museum opened its archive in 2018, scholars ____ the letters for the first time.",
+          "questionType": "Past Tense",
+          "options": [
+            { "id": "a", "text": "have read", "explanationTr": "'in 2018' kesin geçmiş zaman ifadesidir." },
+            { "id": "b", "text": "read", "explanationTr": "Simple Past ('read' /red/) kesin geçmiş tarihle uyumludur." },
+            { "id": "c", "text": "had reading", "explanationTr": "Hatalı fiil çekimi." },
+            { "id": "d", "text": "are reading", "explanationTr": "Geçmiş bağlamla uyumsuz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'in 2018' tamamlanmış geçmiş zamanı gösterdiği için Simple Past kullanılır."
+        },
+        {
+          "id": "g03_q2",
+          "prompt": "She realized she ____ her lab notes on the bus before reaching campus.",
+          "questionType": "Past Perfect",
+          "options": [
+            { "id": "a", "text": "had left", "explanationTr": "Notları unutma eylemi fark etme eyleminden daha önce gerçekleşmiştir." },
+            { "id": "b", "text": "leaves", "explanationTr": "Zaman uyumu yok." },
+            { "id": "c", "text": "has left", "explanationTr": "Ana fiil geçmiş ('realized') olduğu için Present Perfect uygun değil." },
+            { "id": "d", "text": "was leaving", "explanationTr": "Öncelik sırasını doğru yansıtmaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Geçmişteki 'realized' anından önce gerçekleşen unutma eylemi Past Perfect ('had left') ile verilir."
+        },
+        {
+          "id": "g03_q3",
+          "prompt": "While the volunteers ____ water samples, the weather suddenly shifted.",
+          "questionType": "Past Continuous",
+          "options": [
+            { "id": "a", "text": "collected", "explanationTr": "Devam eden arka plan eylemi için continuous yapı daha nettir." },
+            { "id": "b", "text": "were collecting", "explanationTr": "'While' ile süregelen geçmiş eylemi ve onu kesen olayı doğru anlatır." },
+            { "id": "c", "text": "had collect", "explanationTr": "Dilbilgisi açısından yanlış." },
+            { "id": "d", "text": "collect", "explanationTr": "Geçmiş zaman bağlamına uymaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'While' ile başka bir olay tarafından kesilen geçmiş süreçte Past Continuous kullanılır."
+        }
+      ]
+    },
+    {
+      "id": "gram_04_future_forms",
+      "orderIndex": 4,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "IELTS"],
+      "title": "Future Forms",
+      "titleTr": "Gelecek Zaman Yapıları",
+      "tags": ["tense", "future"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Will anlık kararlar ve tahminler, be going to önceden yapılmış planlar ve kanıta dayalı öngörüler, zaman bağlaçlı yan cümlelerde (when, until, before) ise gelecek anlamı için Simple Present kullanılır.",
+      "summaryEn": "Use will for spontaneous decisions/predictions, going to for plans/evidence, and Simple Present in time clauses referring to the future.",
+      "commonMistakesTr": [
+        "When / before / as soon as yan cümlelerinde 'will' kullanmak.",
+        "Belirli saatli tarifeler için gereksiz karmaşık gelecek yapıları kurmak."
+      ],
+      "examples": [
+        {
+          "correct": "I will call you as soon as the seminar ends.",
+          "incorrect": "I will call you as soon as the seminar will end.",
+          "noteTr": "'As soon as' yan cümlesinde gelecek anlamında Simple Present kullanılır."
+        },
+        {
+          "correct": "By Friday, they will have completed the survey.",
+          "incorrect": "By Friday, they will completing the survey.",
+          "noteTr": "By + gelecek zaman noktası Future Perfect ile uyumludur."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g04_q1",
+          "prompt": "We will share the final schedule as soon as the committee ____ the room.",
+          "questionType": "Time Clauses",
+          "options": [
+            { "id": "a", "text": "will confirm", "explanationTr": "'As soon as' zaman yan cümlesinde 'will' kullanılmaz." },
+            { "id": "b", "text": "confirms", "explanationTr": "Zaman bağlaçlı yan cümlede gelecek anlamı için Simple Present gerekir." },
+            { "id": "c", "text": "confirmed", "explanationTr": "Ana cümle gelecek zamanda olduğu için uyumsuz." },
+            { "id": "d", "text": "confirming", "explanationTr": "Çekimli yüklem değil." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'As soon as', 'when', 'before' gibi zaman bağlaçlarından sonra Simple Present kullanılır."
+        },
+        {
+          "id": "g04_q2",
+          "prompt": "By the end of next semester, the researchers ____ more than 400 interviews.",
+          "questionType": "Future Perfect",
+          "options": [
+            { "id": "a", "text": "will have conducted", "explanationTr": "'By the end of...' belirli bir gelecek ana kadar tamamlanmış eylemi bildirir." },
+            { "id": "b", "text": "will conducted", "explanationTr": "Hatalı yardımcı fiil yapısı." },
+            { "id": "c", "text": "have conducted", "explanationTr": "Gelecek zaman belirtecini ('next semester') karşılamaz." },
+            { "id": "d", "text": "are conduct", "explanationTr": "Dilbilgisel olarak hatalı." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'By + gelecek tarih' kalıbı Future Perfect ('will have + V3') ile tamamlanır."
+        },
+        {
+          "id": "g04_q3",
+          "prompt": "Look at those dark clouds over the bay; it ____ soon.",
+          "questionType": "Evidence-based Prediction",
+          "options": [
+            { "id": "a", "text": "is going to rain", "explanationTr": "Şimdiki somut kanıta ('dark clouds') dayalı tahminde 'be going to' tercih edilir." },
+            { "id": "b", "text": "rained", "explanationTr": "Geçmiş zaman." },
+            { "id": "c", "text": "was raining", "explanationTr": "Geçmiş zaman." },
+            { "id": "d", "text": "rains", "explanationTr": "Anlık gözleme dayalı yakın gelecek tahmini değildir." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Görünür kanıta dayalı yakın gelecek öngörülerinde 'be going to' kullanılır."
+        }
+      ]
+    },
+    {
+      "id": "gram_05_subject_verb_agreement",
+      "orderIndex": 5,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["SAT", "IELTS", "AP_ACADEMIC"],
+      "title": "Subject–Verb Agreement",
+      "titleTr": "Özne–Yüklem Uyumu",
+      "tags": ["agreement", "sat-core"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Yüklem, aradaki edat öbeklerinin (of, with, along with) isimlerine değil, cümlenin gerçek çekirdek öznesine göre tekil veya çoğul çekimlenir.",
+      "summaryEn": "A verb agrees with the core subject noun, not with nouns inside intervening prepositional phrases.",
+      "commonMistakesTr": [
+        "'The collection of rare manuscripts' ifadesinde 'manuscripts' kelimesine bakıp çoğul yüklem seçmek.",
+        "'Each', 'every', 'neither of' gibi tekil yapıları çoğul fiille kullanmak."
+      ],
+      "examples": [
+        {
+          "correct": "The collection of ancient maps requires careful storage.",
+          "incorrect": "The collection of ancient maps require careful storage.",
+          "noteTr": "Çekirdek özne tekil 'collection' olduğu için 'requires' kullanılır."
+        },
+        {
+          "correct": "Neither of the proposals addresses the budget gap.",
+          "incorrect": "Neither of the proposals address the budget gap.",
+          "noteTr": "'Neither of + plural noun' resmi yazıda tekil fiil alır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g05_q1",
+          "prompt": "A series of acoustic measurements ____ that the hall amplifies low frequencies.",
+          "questionType": "Agreement",
+          "options": [
+            { "id": "a", "text": "suggest", "explanationTr": "'Measurements' değil, tekil 'series' özne çekirdeğidir." },
+            { "id": "b", "text": "suggests", "explanationTr": "Tekil özne 'A series' ile uyumludur." },
+            { "id": "c", "text": "are suggesting", "explanationTr": "Çoğul yardımcı fiil tekil özneye uymaz." },
+            { "id": "d", "text": "were suggested", "explanationTr": "Anlam ve sayı uyumu hatalı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'A series' tekil özne olduğu için yüklem 'suggests' olmalıdır."
+        },
+        {
+          "id": "g05_q2",
+          "prompt": "The lead biologist, along with two graduate assistants, ____ preparing the samples.",
+          "questionType": "Intervening Phrases",
+          "options": [
+            { "id": "a", "text": "are", "explanationTr": "'along with...' ara öbek özneyi çoğul yapmaz." },
+            { "id": "b", "text": "is", "explanationTr": "Ana özne 'The lead biologist' tekildir." },
+            { "id": "c", "text": "were", "explanationTr": "Çoğul geçmiş yardımcı fiil." },
+            { "id": "d", "text": "have been", "explanationTr": "Çoğul yardımcı fiil." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Along with', 'as well as' gibi ifadeler öznenin tekilliğini değiştirmez."
+        },
+        {
+          "id": "g05_q3",
+          "prompt": "Each of the essays submitted by the finalists ____ a distinct historical period.",
+          "questionType": "Indefinite Pronouns",
+          "options": [
+            { "id": "a", "text": "examine", "explanationTr": "'Each' her zaman tekil fiil ister." },
+            { "id": "b", "text": "examines", "explanationTr": "Tekil özne 'Each' ile uyumludur." },
+            { "id": "c", "text": "are examining", "explanationTr": "Çoğul fiil." },
+            { "id": "d", "text": "were examined", "explanationTr": "Edilgen ve çoğul anlam burada hatalı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Each of + çoğul isim' yapısında fiil tekil çekimlenir."
+        }
+      ]
+    },
+    {
+      "id": "gram_06_articles_determiners",
+      "orderIndex": 6,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "IELTS"],
+      "title": "Articles and Determiners",
+      "titleTr": "Tanımlıklar ve Belirleyiciler",
+      "tags": ["articles", "determiners"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Belirsiz tekil sayılabilir isimlerde a/an, belirli ya da daha önce sözü edilmiş isimlerde the kullanılır. Genel anlamdaki çoğul ve sayılamayan isimler (information, research) tanımlık almaz.",
+      "summaryEn": "Use a/an for nonspecific singular countable nouns, the for specific references, and zero article for general uncountable or plural nouns.",
+      "commonMistakesTr": [
+        "'Information', 'advice', 'research' gibi sayılamayan isimlere 'an' veya '-s' eklemek.",
+        "Genel kavramlar önünde gereksiz 'the' kullanmak."
+      ],
+      "examples": [
+        {
+          "correct": "She offered useful advice before the interview.",
+          "incorrect": "She offered a useful advice before the interview.",
+          "noteTr": "'Advice' sayılamayan isimdir, 'a/an' almaz."
+        },
+        {
+          "correct": "An honest assessment takes courage.",
+          "incorrect": "A honest assessment takes courage.",
+          "noteTr": "'Honest' sesli harf sesiyle başladığı için 'an' alır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g06_q1",
+          "prompt": "The report provides ____ detailed information about urban heat islands.",
+          "questionType": "Uncountable Nouns",
+          "options": [
+            { "id": "a", "text": "a", "explanationTr": "'Information' sayılamayan isimdir; 'a' almaz." },
+            { "id": "b", "text": "many", "explanationTr": "'Many' sayılabilir çoğul isimlerle kullanılır." },
+            { "id": "c", "text": "(no article)", "explanationTr": "Genel anlamda sayılamayan isim önünde tanımlık kullanılmaz." },
+            { "id": "d", "text": "several", "explanationTr": "'Several' sayılabilir çoğul isimlerle kullanılır." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "'Information' sayılamayan tekil bir isim olduğundan belirsiz tanımlık almaz."
+        },
+        {
+          "id": "g06_q2",
+          "prompt": "We spent ____ hour reviewing the footnotes at the end of the chapter.",
+          "questionType": "A / An Sound Rule",
+          "options": [
+            { "id": "a", "text": "a", "explanationTr": "'Hour' okunuşta sessiz 'h' ile başladığından 'a' değil 'an' alır." },
+            { "id": "b", "text": "an", "explanationTr": "Ünlü sesiyle başlayan 'hour' önünde 'an' kullanılır." },
+            { "id": "c", "text": "few", "explanationTr": "Tekil 'hour' ile kullanılmaz." },
+            { "id": "d", "text": "many", "explanationTr": "Tekil isimle uyumsuz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "A/an seçimi yazılışa değil ilk telaffuz sesine göre yapılır."
+        },
+        {
+          "id": "g06_q3",
+          "prompt": "____ telescope mounted on the roof belongs to the physics department.",
+          "questionType": "Definite Article",
+          "options": [
+            { "id": "a", "text": "The", "explanationTr": "'mounted on the roof' ile belirli bir teleskop tanımlandığı için 'The' gerekir." },
+            { "id": "b", "text": "An", "explanationTr": "'Telescope' ünsüzle başlar ve burada belirlidir." },
+            { "id": "c", "text": "Some", "explanationTr": "Tekil sayılabilir 'telescope' ile bu anlamda uyumsuz." },
+            { "id": "d", "text": "Few", "explanationTr": "Tekil isimle kullanılmaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Sonradan niteleme ('mounted on the roof') ile özelleştirilen tekil isimlerde 'the' kullanılır."
+        }
+      ]
+    },
+    {
+      "id": "gram_07_pronouns_reference",
+      "orderIndex": 7,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "Pronouns and Reference",
+      "titleTr": "Zamirler ve Gönderim Uyumu",
+      "tags": ["pronouns", "sat-core"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Zamirler gönderimde bulundukları isimle sayıca uyumlu olmalı ve belirsiz (ambiguous) gönderim oluşturmamalıdır.",
+      "summaryEn": "Pronouns must agree in number with clear antecedents and avoid ambiguous references.",
+      "commonMistakesTr": [
+        "Tekil bir isme çoğul 'they/their' (resmi sınav bağlamında tekil antecedent ile uyumsuzluk) veya tersini yazmak.",
+        "'It' veya 'this' zamirini iki olası isimden hangisine gittiği belirsiz biçimde kullanmak."
+      ],
+      "examples": [
+        {
+          "correct": "If a student arrives late, the student should sign the log.",
+          "incorrect": "When Maya spoke to Lina, she looked nervous.",
+          "noteTr": "'she' belirsizdir; kimin gergin göründüğü açık değildir."
+        },
+        {
+          "correct": "The committee issued its annual report yesterday.",
+          "incorrect": "The committee issued their annual report yesterday.",
+          "noteTr": "Tekil bir kurum/kurul Amerikan akademik İngilizcesinde 'its' alır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g07_q1",
+          "prompt": "Each municipality must update ____ emergency evacuation map every two years.",
+          "questionType": "Pronoun Agreement",
+          "options": [
+            { "id": "a", "text": "their", "explanationTr": "Özne 'Each municipality' tekildir." },
+            { "id": "b", "text": "its", "explanationTr": "Tekil kurum öznesine uygun iyelik zamiri 'its' olur." },
+            { "id": "c", "text": "it's", "explanationTr": "'it's' = 'it is' kısaltmasıdır, iyelik değildir." },
+            { "id": "d", "text": "them", "explanationTr": "İsim önünde iyelik sıfatı gerekir." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Each municipality' tekil olduğundan iyelik zamiri 'its' olmalıdır."
+        },
+        {
+          "id": "g07_q2",
+          "prompt": "Which revision removes the ambiguous pronoun reference?",
+          "questionType": "Clarity",
+          "options": [
+            { "id": "a", "text": "After the editor met the author, she revised the preface.", "explanationTr": "'She' editörü mü yazarı mı kastediyor belirsiz." },
+            { "id": "b", "text": "After the editor met the author, the author revised the preface.", "explanationTr": "İsim tekrar edilerek gönderim netleştirilmiştir." },
+            { "id": "c", "text": "They revised it after meeting.", "explanationTr": "İki zamir de belirsiz." },
+            { "id": "d", "text": "She met her and revised it.", "explanationTr": "Tamamen belirsiz gönderim." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İki aynı cinsiyetli veya belirsiz kişiden hangisinin kastedildiğini belirtmek için isim açıkça yazılır."
+        },
+        {
+          "id": "g07_q3",
+          "prompt": "Between you and ____, the second draft reads much more smoothly.",
+          "questionType": "Pronoun Case",
+          "options": [
+            { "id": "a", "text": "I", "explanationTr": "'Between' edatından sonra nesne zamiri gerekir." },
+            { "id": "b", "text": "me", "explanationTr": "Edat nesnesi olarak 'me' doğrudur." },
+            { "id": "c", "text": "myself", "explanationTr": "Dönüşlü zamir burada gereksizdir." },
+            { "id": "d", "text": "mine", "explanationTr": "İyelik zamiri burada anlamsızdır." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Edatlardan ('between', 'for', 'with') sonra 'me/him/her/us/them' nesne zamirleri gelir."
+        }
+      ]
+    },
+    {
+      "id": "gram_08_adjectives_adverbs",
+      "orderIndex": 8,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "SAT"],
+      "title": "Adjectives and Adverbs",
+      "titleTr": "Sıfatlar ve Zarflar",
+      "tags": ["modifiers", "comparison"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Sıfatlar isimleri veya bağ fiillerden (seem, look, feel) sonraki özneyi niteler; zarflar ise fiilleri, sıfatları ve diğer zarfları niteler.",
+      "summaryEn": "Adjectives modify nouns or follow linking verbs, whereas adverbs modify verbs, adjectives, and other adverbs.",
+      "commonMistakesTr": [
+        "Eylem fiillerinden sonra zarf yerine sıfat ('spoke quick') kullanmak.",
+        "İki öğeyi karşılaştırırken superlative ('the best of the two') kullanmak."
+      ],
+      "examples": [
+        {
+          "correct": "The sensor measured the temperature accurately.",
+          "incorrect": "The sensor measured the temperature accurate.",
+          "noteTr": "'Measured' eylem fiilini nitelemek için zarf ('accurately') gerekir."
+        },
+        {
+          "correct": "Of the two methods, the second is more efficient.",
+          "incorrect": "Of the two methods, the second is most efficient.",
+          "noteTr": "İki seçenek arasında comparative ('more efficient') kullanılır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g08_q1",
+          "prompt": "The presenter explained a complex economic model remarkably ____.",
+          "questionType": "Adverb Usage",
+          "options": [
+            { "id": "a", "text": "clear", "explanationTr": "'Explained' fiilini sıfat değil zarf niteler." },
+            { "id": "b", "text": "clearly", "explanationTr": "'Explained' eylem fiilini niteleyen zarf doğrudur." },
+            { "id": "c", "text": "clarity", "explanationTr": "'Clarity' isimdir." },
+            { "id": "d", "text": "clearness", "explanationTr": "İsim biçimi." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Fiili ('explained') ve önündeki zarfı ('remarkably') takip eden yapı zarf ('clearly') olmalıdır."
+        },
+        {
+          "id": "g08_q2",
+          "prompt": "Despite the long flight, the speaker looked ____ before the keynote.",
+          "questionType": "Linking Verbs",
+          "options": [
+            { "id": "a", "text": "calm", "explanationTr": "'Look' burada bağ fiildir (linking verb) ve sıfat alır." },
+            { "id": "b", "text": "calmly", "explanationTr": "Görünüm durumunu anlatırken zarf yerine sıfat tercih edilir." },
+            { "id": "c", "text": "calmness", "explanationTr": "İsim." },
+            { "id": "d", "text": "calmingly", "explanationTr": "Bağlama uygun değil." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Look, seem, feel, become' gibi bağ fiillerden sonra özneyi niteleyen sıfat ('calm') kullanılır."
+        },
+        {
+          "id": "g08_q3",
+          "prompt": "Between the two proposed routes, the coastal path is ____.",
+          "questionType": "Comparatives",
+          "options": [
+            { "id": "a", "text": "the shortest", "explanationTr": "İki öğe kıyaslanırken superlative kullanılmaz." },
+            { "id": "b", "text": "shorter", "explanationTr": "İki rota karşılaştırıldığı için comparative ('shorter') doğrudur." },
+            { "id": "c", "text": "most short", "explanationTr": "Tek heceli sıfat 'most' almaz." },
+            { "id": "d", "text": "shortly", "explanationTr": "'Shortly' 'yakında' anlamına gelen bir zarftır." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İki şey karşılaştırılırken comparative sıfat ('shorter') kullanılır."
+        }
+      ]
+    },
+    {
+      "id": "gram_09_prepositions",
+      "orderIndex": 9,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "targetExams": ["GENERAL", "IELTS"],
+      "title": "Prepositions",
+      "titleTr": "Edatlar ve Kalıp Kullanımlar",
+      "tags": ["prepositions", "collocations"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Zaman ve yer edatlarının (at, on, in) yanı sıra fiil ve sıfatlarla kalıplaşmış edatlara (depend on, interested in, responsible for) dikkat edilmelidir.",
+      "summaryEn": "Pay attention to time/place prepositions (at, on, in) and fixed verb/adjective preposition collocations.",
+      "commonMistakesTr": [
+        "'Discuss about' veya 'emphasize on' gibi Türkçeden birebir çeviriyle fazla edat eklemek.",
+        "Belirli günlerde 'in Monday' yazmak ('on Monday' yerine)."
+      ],
+      "examples": [
+        {
+          "correct": "The committee will discuss the budget on Tuesday.",
+          "incorrect": "The committee will discuss about the budget in Tuesday.",
+          "noteTr": "'Discuss' doğrudan nesne alır ('about' yok); günler 'on' alır."
+        },
+        {
+          "correct": "Successful recovery depends on consistent rest.",
+          "incorrect": "Successful recovery depends of consistent rest.",
+          "noteTr": "'Depend' fiili her zaman 'on/upon' ile kullanılır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g09_q1",
+          "prompt": "The museum's funding largely depends ____ municipal grants and private donations.",
+          "questionType": "Collocations",
+          "options": [
+            { "id": "a", "text": "of", "explanationTr": "'Depend of' hatalıdır." },
+            { "id": "b", "text": "on", "explanationTr": "'Depend on' kalıp kullanımdır." },
+            { "id": "c", "text": "at", "explanationTr": "'Depend at' kullanılmaz." },
+            { "id": "d", "text": "with", "explanationTr": "'Depend with' kullanılmaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Depend' fiili 'on' edatıyla eşleşir."
+        },
+        {
+          "id": "g09_q2",
+          "prompt": "The orientation session begins ____ 9:30 a.m. ____ Monday morning.",
+          "questionType": "Time Prepositions",
+          "options": [
+            { "id": "a", "text": "at / on", "explanationTr": "Saatler 'at', günler ve gün bölümleri 'on' alır." },
+            { "id": "b", "text": "on / in", "explanationTr": "Saatlerde 'on' kullanılmaz." },
+            { "id": "c", "text": "in / on", "explanationTr": "Saatlerde 'in' kullanılmaz." },
+            { "id": "d", "text": "at / in", "explanationTr": "'Monday morning' belirli bir gün olduğu için 'on' alır." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Kesin saatler için 'at', gün adları içeren zaman ifadeleri için 'on' kullanılır."
+        },
+        {
+          "id": "g09_q3",
+          "prompt": "Which sentence uses the verb without an unnecessary preposition?",
+          "questionType": "Transitive Verbs",
+          "options": [
+            { "id": "a", "text": "We discussed about the readings in seminar.", "explanationTr": "'Discuss' edatsız geçişli fiildir." },
+            { "id": "b", "text": "We discussed the readings in seminar.", "explanationTr": "'Discuss + nesne' doğrudan ve doğrudur." },
+            { "id": "c", "text": "We emphasized on the main argument.", "explanationTr": "'Emphasize' edatsız kullanılır." },
+            { "id": "d", "text": "We approached to the podium.", "explanationTr": "'Approach' doğrudan nesne alır." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Discuss', 'emphasize' ve 'approach' geçişli fiillerdir ve araya edat almazlar."
+        }
+      ]
+    },
+    {
+      "id": "gram_10_modals",
+      "orderIndex": 10,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["GENERAL", "IELTS", "SAT"],
+      "title": "Modals",
+      "titleTr": "Kiplik Fiiller",
+      "tags": ["modals", "deduction"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Modals (must, might, should, could) zorunluluk, olasılık ve geçmişe yönelik çıkarım bildirir. Geçmiş çıkarım ve pişmanlık için modal + have + V3 kullanılır.",
+      "summaryEn": "Modals express obligation, possibility, and deduction; past deduction and regret use modal + have + past participle.",
+      "commonMistakesTr": [
+        "Modal fiilden sonra 'to' veya çekimli fiil ('must to go', 'should went') yazmak.",
+        "Geçmiş kesin çıkarımda 'must be' yerine 'must have been' kullanmayı unutmak."
+      ],
+      "examples": [
+        {
+          "correct": "The ground is soaked; it must have rained overnight.",
+          "incorrect": "The ground is soaked; it must rained overnight.",
+          "noteTr": "Geçmişe dair güçlü çıkarımda 'must have + V3' gerekir."
+        },
+        {
+          "correct": "Applicants must submit transcripts by May 1.",
+          "incorrect": "Applicants must to submit transcripts by May 1.",
+          "noteTr": "Must ardından yalın fiil ('submit') gelir."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g10_q1",
+          "prompt": "The lights are still off and the door is locked; everyone ____ already.",
+          "questionType": "Past Deduction",
+          "options": [
+            { "id": "a", "text": "must leave", "explanationTr": "Şimdiki kanıttan geçmiş bir olaya çıkarım yapılıyor." },
+            { "id": "b", "text": "must have left", "explanationTr": "Geçmişe yönelik güçlü çıkarım için 'must have + V3' doğrudur." },
+            { "id": "c", "text": "should left", "explanationTr": "Eksik yardımcı fiil." },
+            { "id": "d", "text": "can't leaving", "explanationTr": "Hatalı yapı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Şu anki gözleme dayanarak geçmişteki bir durumu çıkarırken 'must have + V3' kullanılır."
+        },
+        {
+          "id": "g10_q2",
+          "prompt": "You ____ bring a calculator to the writing section; it is not permitted.",
+          "questionType": "Prohibition vs Lack of Necessity",
+          "options": [
+            { "id": "a", "text": "don't have to", "explanationTr": "'Don't have to' zorunlu değil anlamındadır, yasak değildir." },
+            { "id": "b", "text": "mustn't", "explanationTr": "'Not permitted' yasak bildirdiği için 'mustn't' doğrudur." },
+            { "id": "c", "text": "needn't", "explanationTr": "Gerek yok anlamındadır, yasak değildir." },
+            { "id": "d", "text": "mightn't to", "explanationTr": "Dilbilgisel olarak hatalı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Yasaklama ('not permitted') 'must not / mustn't' ile ifade edilir."
+        },
+        {
+          "id": "g10_q3",
+          "prompt": "We ____ backed up the dataset before updating the software, but we forgot.",
+          "questionType": "Past Regret",
+          "options": [
+            { "id": "a", "text": "should have", "explanationTr": "Geçmişte yapılması gereken ama yapılmayan eylem için 'should have + V3' kullanılır." },
+            { "id": "b", "text": "must", "explanationTr": "Fiil 'backed' (V3) ile tek başına bağlanmaz." },
+            { "id": "c", "text": "could be", "explanationTr": "Anlamsal ve yapısal olarak uyumsuz." },
+            { "id": "d", "text": "have to", "explanationTr": "Geçmiş pişmanlık yapısını vermez." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Should have + V3' geçmişte yapılmamış doğru hareketi veya pişmanlığı anlatır."
+        }
+      ]
+    },
+    {
+      "id": "gram_11_passive_voice",
+      "orderIndex": 11,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["IELTS", "AP_ACADEMIC"],
+      "title": "Passive Voice",
+      "titleTr": "Edilgen Çatı",
+      "tags": ["passive", "academic"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Edilgen çatı (be + V3), eylemi yapanın değil eylemden etkilenen nesnenin veya sürecin önemli olduğu akademik metinlerde sık kullanılır.",
+      "summaryEn": "Use passive voice (be + past participle) when the action or recipient is more important than the agent.",
+      "commonMistakesTr": [
+        "Geçişsiz fiilleri (arrive, happen, exist, consist) edilgen yapmaya çalışmak.",
+        "Edilgen yapıda 'be' yardımcı fiilini unutmak."
+      ],
+      "examples": [
+        {
+          "correct": "Water samples are filtered before analysis.",
+          "incorrect": "Water samples filtered before analysis.",
+          "noteTr": "Örnekler kendi kendine süzemediği için edilgen 'are filtered' gerekir."
+        },
+        {
+          "correct": "The sudden drop occurred around midnight.",
+          "incorrect": "The sudden drop was occurred around midnight.",
+          "noteTr": "'Occur' geçişsiz fiildir; edilgen yapılmaz."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g11_q1",
+          "prompt": "Each manuscript ____ by two independent reviewers prior to publication.",
+          "questionType": "Passive Form",
+          "options": [
+            { "id": "a", "text": "evaluates", "explanationTr": "Makale değerlendirmez, değerlendirilir." },
+            { "id": "b", "text": "is evaluated", "explanationTr": "Tekil özne ve genel akademik süreç için edilgen yapı doğrudur." },
+            { "id": "c", "text": "evaluated by", "explanationTr": "'is' yardımcı fiili eksik." },
+            { "id": "d", "text": "is evaluating", "explanationTr": "Etken şimdiki zaman." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'By two independent reviewers' ifadesi ve nesne özne konumu edilgen çatı ('is evaluated') gerektirir."
+        },
+        {
+          "id": "g11_q2",
+          "prompt": "Choose the grammatically valid sentence:",
+          "questionType": "Intransitive Verbs",
+          "options": [
+            { "id": "a", "text": "A major shift was happened in the 1990s.", "explanationTr": "'Happen' geçişsiz fiildir, edilgen olamaz." },
+            { "id": "b", "text": "A major shift occurred in the 1990s.", "explanationTr": "'Occur' etken geçmiş zamanda doğru kullanılmıştır." },
+            { "id": "c", "text": "The experiment was consisted of three phases.", "explanationTr": "'Consist of' edilgen yapılmaz." },
+            { "id": "d", "text": "The package was arrived yesterday.", "explanationTr": "'Arrive' geçişsizdir, edilgen olmaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Happen, arrive, occur, consist gibi geçişsiz fiiller edilgen çatıda kullanılmaz."
+        },
+        {
+          "id": "g11_q3",
+          "prompt": "The bridge ____ right now, so traffic is being diverted.",
+          "questionType": "Continuous Passive",
+          "options": [
+            { "id": "a", "text": "is repairing", "explanationTr": "Köprü onarmaz, onarılır." },
+            { "id": "b", "text": "is being repaired", "explanationTr": "'Right now' şu anda süren edilgen eylemi gerektirir." },
+            { "id": "c", "text": "has repaired", "explanationTr": "Etken yapı." },
+            { "id": "d", "text": "repaired", "explanationTr": "Etken geçmiş yapı." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Şimdiki zaman edilgen yapısı 'am/is/are + being + V3' şeklindedir."
+        }
+      ]
+    },
+    {
+      "id": "gram_12_relative_clauses",
+      "orderIndex": 12,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["SAT", "IELTS", "AP_ACADEMIC"],
+      "title": "Relative Clauses",
+      "titleTr": "İlgi Cümlecikleri",
+      "tags": ["relative-clauses", "punctuation"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Defining (tanımlayıcı) ilgi cümlecikleri virgül almaz ve 'that' kullanabilir; non-defining (ek bilgi veren) ilgi cümlecikleri virgülle ayrılır ve 'that' kullanmaz.",
+      "summaryEn": "Restrictive relative clauses take no commas and allow 'that', while non-restrictive clauses use commas and 'which'/'who' instead of 'that'.",
+      "commonMistakesTr": [
+        "Virgül sonrasında 'which' yerine 'that' kullanmak.",
+        "İlgi cümleciği içinde gereksiz zamir tekrarlamak ('the book that I read it')."
+      ],
+      "examples": [
+        {
+          "correct": "The observatory, which opened in 1964, sits atop the ridge.",
+          "incorrect": "The observatory, that opened in 1964, sits atop the ridge.",
+          "noteTr": "Virgüllü ek bilgi cümleciğinde 'that' kullanılmaz."
+        },
+        {
+          "correct": "The article that you recommended was insightful.",
+          "incorrect": "The article that you recommended it was insightful.",
+          "noteTr": "'It' gereksiz zamir tekrarıdır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g12_q1",
+          "prompt": "Dr. Gomez, ____ research focuses on coral resilience, spoke at the symposium.",
+          "questionType": "Possessive Relative",
+          "options": [
+            { "id": "a", "text": "who", "explanationTr": "Ardından isim ('research') geldiği için iyelik gerekir." },
+            { "id": "b", "text": "whose", "explanationTr": "'Araştırması ... üzerine olan Dr. Gomez' anlamında 'whose' doğrudur." },
+            { "id": "c", "text": "whom", "explanationTr": "İyelik bildirmez." },
+            { "id": "d", "text": "that", "explanationTr": "Virgül sonrası ve iyelik anlamında kullanılmaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İyelik ilişkisi kuran ilgi zamiri 'whose' olup ardından isim öbeği gelir."
+        },
+        {
+          "id": "g12_q2",
+          "prompt": "Select the correctly punctuated non-restrictive clause:",
+          "questionType": "Restrictive vs Non-restrictive",
+          "options": [
+            { "id": "a", "text": "Kyoto, that is famous for historic temples, attracts researchers.", "explanationTr": "Virgüller arasında 'that' kullanılmaz." },
+            { "id": "b", "text": "Kyoto, which is famous for historic temples, attracts researchers.", "explanationTr": "Özel isimden sonra virgüller ve 'which' doğru kullanılmış." },
+            { "id": "c", "text": "Kyoto which is famous for historic temples, attracts researchers.", "explanationTr": "Açılış virgülü eksik." },
+            { "id": "d", "text": "Kyoto, where is famous for historic temples, attracts researchers.", "explanationTr": "'Where' özne konumunda 'which' yerine geçemez." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Ek bilgi veren non-restrictive yapılarda her iki uçta virgül ve 'which' kullanılır."
+        },
+        {
+          "id": "g12_q3",
+          "prompt": "The archive ____ we visited last month holds letters from 1890.",
+          "questionType": "Object Relative",
+          "options": [
+            { "id": "a", "text": "where", "explanationTr": "'Visit' geçişli fiildir; nesne alır ('visited the archive')." },
+            { "id": "b", "text": "which", "explanationTr": "Nesne konumundaki yer için 'which/that' doğrudur." },
+            { "id": "c", "text": "who", "explanationTr": "Kişi için kullanılır." },
+            { "id": "d", "text": "what", "explanationTr": "İsimden sonra ilgi zamiri olarak 'what' kullanılmaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Visit' fiili doğrudan nesne aldığı için yer anlamlı 'where' yerine 'which/that' seçilir."
+        }
+      ]
+    },
+    {
+      "id": "gram_13_conditionals",
+      "orderIndex": 13,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["GENERAL", "IELTS", "SAT"],
+      "title": "Conditionals",
+      "titleTr": "Koşul Cümleleri",
+      "tags": ["conditionals", "hypothetical"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Type 1 gerçek olasılık (If + Present, will), Type 2 şimdiki gerçek dışı durum (If + Past, would), Type 3 geçmişteki gerçekleşmemiş durum (If + had V3, would have V3) bildirir.",
+      "summaryEn": "First conditional states real possibilities, second conditional expresses unreal present situations, and third conditional reflects on unreal past outcomes.",
+      "commonMistakesTr": [
+        "'If' yan cümlesinin içine 'would' veya 'will' koymak.",
+        "Type 2 ve Type 3 zaman kiplerini karıştırmak."
+      ],
+      "examples": [
+        {
+          "correct": "If the sensor had detected the leak earlier, engineers would have shut the valve.",
+          "incorrect": "If the sensor would have detected the leak earlier, engineers would have shut the valve.",
+          "noteTr": "Koşul yan cümlesinde ('if') 'would have' kullanılmaz; 'had detected' gerekir."
+        },
+        {
+          "correct": "If funding were available, the clinic would expand.",
+          "incorrect": "If funding would be available, the clinic would expand.",
+          "noteTr": "Gerçek dışı şimdiki koşulda 'were/Past Simple' kullanılır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g13_q1",
+          "prompt": "If the team ____ the baseline data yesterday, we would know the trend today.",
+          "questionType": "Mixed Conditional",
+          "options": [
+            { "id": "a", "text": "recorded", "explanationTr": "Geçmiş koşul ('yesterday') sonucu bugünü etkilediği için Type 3 + Type 2 karışık yapı gerekir." },
+            { "id": "b", "text": "had recorded", "explanationTr": "Geçmişteki gerçekleşmemiş koşul için 'had recorded' doğrudur." },
+            { "id": "c", "text": "would record", "explanationTr": "'If' cümlesinde 'would' kullanılmaz." },
+            { "id": "d", "text": "records", "explanationTr": "Şimdiki zaman geçmiş 'yesterday' ile uyumsuz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Geçmişe ait koşul ('yesterday') 'had + V3' ile ifade edilirken bugünkü sonuç 'would know' ile bağlanır."
+        },
+        {
+          "id": "g13_q2",
+          "prompt": "Unless the rainfall ____ soon, regional reservoirs will fall below capacity.",
+          "questionType": "Unless",
+          "options": [
+            { "id": "a", "text": "doesn't increase", "explanationTr": "'Unless' zaten 'if ... not' demektir; tekrar olumsuzluk kullanılmaz." },
+            { "id": "b", "text": "increases", "explanationTr": "'Unless + olumlu Simple Present' doğru Type 1 koşul yapısıdır." },
+            { "id": "c", "text": "will increase", "explanationTr": "Koşul yan cümlesinde 'will' kullanılmaz." },
+            { "id": "d", "text": "increased", "explanationTr": "Ana cümle 'will fall' ile zaman uyumsuz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'Unless' olumsuz anlam taşıdığı için yan cümle olumlu Simple Present çekimlenir."
+        },
+        {
+          "id": "g13_q3",
+          "prompt": "If I ____ more familiar with statistical software, I would volunteer for the analysis.",
+          "questionType": "Second Conditional",
+          "options": [
+            { "id": "a", "text": "were", "explanationTr": "Gerçek dışı şimdiki durumlarda resmi 'were' (subjunctive) doğrudur." },
+            { "id": "b", "text": "am", "explanationTr": "Ana cümlede 'would' olduğu için gerçek zaman uyuşmaz." },
+            { "id": "c", "text": "would be", "explanationTr": "'If' yan cümlesinde 'would' kullanılmaz." },
+            { "id": "d", "text": "have been", "explanationTr": "Koşul kipine uymaz." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Type 2 gerçek dışı durumlarda 'If I were...' kalıbı standart akademik kullanımdır."
+        }
+      ]
+    },
+    {
+      "id": "gram_14_conjunctions_transitions",
+      "orderIndex": 14,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "targetExams": ["SAT", "IELTS", "AP_ACADEMIC"],
+      "title": "Conjunctions and Transitions",
+      "titleTr": "Bağlaçlar ve Geçiş İfadeleri",
+      "tags": ["transitions", "cohesion"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Although/even though tam cümle alırken despite/in spite of isim öbeği alır. Transitions (however, consequently, nevertheless) cümleler arasında mantıksal ilişki kurar.",
+      "summaryEn": "Subordinators like 'although' introduce clauses, prepositions like 'despite' take noun phrases, and transitions link logical relationships.",
+      "commonMistakesTr": [
+        "'Although' ve 'but' bağlaçlarını aynı cümlede birlikte kullanmak.",
+        "'Despite' sonrasında tam cümle yazmak ('despite it rained')."
+      ],
+      "examples": [
+        {
+          "correct": "Despite the high cost, the observatory was built.",
+          "incorrect": "Despite it cost a lot, the observatory was built.",
+          "noteTr": "'Despite' bir edattır; tam cümle değil isim öbeği alır."
+        },
+        {
+          "correct": "Although the sample was small, the pattern held.",
+          "incorrect": "Although the sample was small, but the pattern held.",
+          "noteTr": "'Although' ile 'but' aynı cümlede birlikte kullanılmaz."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g14_q1",
+          "prompt": "____ the initial skepticism among critics, the documentary won three awards.",
+          "questionType": "Preposition vs Subordinator",
+          "options": [
+            { "id": "a", "text": "Although", "explanationTr": "'the initial skepticism' bir isim öbeğidir, cümle değildir." },
+            { "id": "b", "text": "Despite", "explanationTr": "İsim öbeği önünde zıtlık bildiren edat 'Despite' doğrudur." },
+            { "id": "c", "text": "Even though", "explanationTr": "Tam cümle (özne+yüklem) gerektirir." },
+            { "id": "d", "text": "However", "explanationTr": "İsim öbeğini tek başına bağlayan edat değildir." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Boşluktan sonra çekimli fiil olmadığı için isim öbeği alan 'Despite' gerekir."
+        },
+        {
+          "id": "g14_q2",
+          "prompt": "The city expanded its bike lanes; ____, commuter traffic dropped by twelve percent.",
+          "questionType": "Logical Transitions",
+          "options": [
+            { "id": "a", "text": "nevertheless", "explanationTr": "Burada zıtlık değil neden-sonuç ilişkisi vardır." },
+            { "id": "b", "text": "consequently", "explanationTr": "Bisiklet yollarının genişlemesinin sonucu olarak trafik azalmıştır." },
+            { "id": "c", "text": "in contrast", "explanationTr": "Karşıtlık bildirir, bağlama uymaz." },
+            { "id": "d", "text": "meanwhile", "explanationTr": "Eşzamanlılık vurgular; burada sonuç ilişkisi öne çıkıyor." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İkinci cümle ilk cümlenin doğrudan sonucunu aktardığı için 'consequently' uygundur."
+        },
+        {
+          "id": "g14_q3",
+          "prompt": "Choose the sentence without redundant conjunctions:",
+          "questionType": "Conjunction Pairing",
+          "options": [
+            { "id": "a", "text": "Although the trial was brief, yet it yielded useful metrics.", "explanationTr": "'Although' ve 'yet/but' aynı anda kullanılmaz." },
+            { "id": "b", "text": "Although the trial was brief, it yielded useful metrics.", "explanationTr": "Tek zıtlık bağlacıyla kurallı cümle." },
+            { "id": "c", "text": "Because the sensor failed, so we paused collection.", "explanationTr": "'Because' ve 'so' birlikte kullanılmaz." },
+            { "id": "d", "text": "Even though the rain stopped, but the track stayed wet.", "explanationTr": "Çift bağlaç hatası." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İngilizcede bir cümle çifti tek bir ana bağlaç ile bağlanır (although+yet veya because+so yanlıştır)."
+        }
+      ]
+    },
+    {
+      "id": "gram_15_punctuation_boundaries",
+      "orderIndex": 15,
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C1",
+      "targetExams": ["SAT", "AP_ACADEMIC"],
+      "title": "Punctuation and Sentence Boundaries",
+      "titleTr": "Noktalama ve Cümle Sınırları",
+      "tags": ["punctuation", "colons", "semicolons"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "summaryTr": "Noktalı virgül (;) iki bağımsız cümleyi bağlar. İki nokta (:) mutlaka tam bir cümleden sonra gelerek açıklama, liste veya örnek sunar. İki tire (—) ek bilgiyi ayırır.",
+      "summaryEn": "Semicolons link two independent clauses; colons must follow a complete clause to introduce an explanation or list; paired em-dashes set off nonessential info.",
+      "commonMistakesTr": [
+        "'Such as' veya bir fiilden hemen sonra iki nokta (:) koymak.",
+        "Ara sözü bir tarafta virgül, diğer tarafta tire ile kapatmak."
+      ],
+      "examples": [
+        {
+          "correct": "The expedition required three essentials: maps, water filters, and radios.",
+          "incorrect": "The expedition required: maps, water filters, and radios.",
+          "noteTr": "'required' fiilinden hemen sonra iki nokta konmaz; öncesinde tam cümle gerekir."
+        },
+        {
+          "correct": "The telescope—built in 1998—remains operational.",
+          "incorrect": "The telescope—built in 1998, remains operational.",
+          "noteTr": "Tire ile açılan ara söz yine tire ile kapatılır."
+        }
+      ],
+      "questions": [
+        {
+          "id": "g15_q1",
+          "prompt": "Select the sentence that uses a colon correctly:",
+          "questionType": "Colon Usage",
+          "options": [
+            { "id": "a", "text": "The syllabus includes: syntax, rhetoric, and stylistics.", "explanationTr": "'Includes' fiilinden hemen sonra iki nokta konamaz." },
+            { "id": "b", "text": "The syllabus covers three core areas: syntax, rhetoric, and stylistics.", "explanationTr": "Tam cümlenin ardından üç öğeyi tanıtan iki nokta doğrudur." },
+            { "id": "c", "text": "Such as: syntax, rhetoric, and stylistics are covered.", "explanationTr": "Tam cümle olmadan iki nokta kullanılmış." },
+            { "id": "d", "text": "Syntax, rhetoric: and stylistics are in the syllabus.", "explanationTr": "Hatalı yerleştirme." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "İki nokta (:) öncesinde mutlaka bağımsız ve eksiksiz bir cümle bulunmalıdır."
+        },
+        {
+          "id": "g15_q2",
+          "prompt": "Which sentence punctuates the parenthetical element consistently?",
+          "questionType": "Paired Punctuation",
+          "options": [
+            { "id": "a", "text": "The catalyst—discovered almost by accident, doubled the yield.", "explanationTr": "Tire ile açılıp virgülle kapatılmış." },
+            { "id": "b", "text": "The catalyst—discovered almost by accident—doubled the yield.", "explanationTr": "İki uçta da eşleşen tire (em-dash) doğru kullanılmış." },
+            { "id": "c", "text": "The catalyst, discovered almost by accident—doubled the yield.", "explanationTr": "Virgül ile açılıp tire ile kapatılmış." },
+            { "id": "d", "text": "The catalyst; discovered almost by accident; doubled the yield.", "explanationTr": "Noktalı virgül ara söz ayırmada kullanılmaz." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Ara sözler ya iki virgül ya iki tire ya da iki parantez ile tutarlı biçimde ayrılır."
+        },
+        {
+          "id": "g15_q3",
+          "prompt": "The museum's funding declined last year____ its public lectures, however, remained free.",
+          "questionType": "Semicolon Boundaries",
+          "options": [
+            { "id": "a", "text": ",", "explanationTr": "İki bağımsız cümleyi yalnızca virgül ayıramaz." },
+            { "id": "b", "text": ";", "explanationTr": "İki bağımsız cümle arasında noktalı virgül doğrudur." },
+            { "id": "c", "text": ":", "explanationTr": "İkinci kısım ilkinin tanımı/listesi değil, zıt bağımsız yargısıdır." },
+            { "id": "d", "text": "(no punctuation)", "explanationTr": "Run-on (bitişik) cümle hatası." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "'However' cümle ortasında olsa bile iki bağımsız cümleyi bağlamak için noktalı virgül gerekir."
+        }
+      ]
+    }
+  ]
+}

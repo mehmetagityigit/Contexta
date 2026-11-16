@@ -1,0 +1,243 @@
+<resources>
+    <string name="app_name">Contexta</string>
+
+    <!-- Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_close">Close</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_done">Done</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_save">Save</string>
+    <string name="action_see_all">See all</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_vocabulary">Words</string>
+    <string name="nav_study">Study</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Modules -->
+    <string name="module_grammar">Grammar</string>
+    <string name="module_reading">Reading</string>
+    <string name="module_listening">Listening</string>
+
+    <!-- Auth & Onboarding -->
+    <string name="auth_tagline">Learn English through the real contexts you watch and read.</string>
+    <string name="auth_account_title">Cloud Account</string>
+    <string name="auth_account_subtitle">Sync your saved vocabulary, context examples, and spaced repetition schedule with Google.</string>
+    <string name="auth_google_sign_in">Sign in with Google</string>
+    <string name="auth_cancelled">Sign-in was cancelled.</string>
+    <string name="auth_checking_session">Checking session…</string>
+    <string name="auth_demo_title">Demo Mode</string>
+    <string name="auth_demo_subtitle">Explore the full app immediately with curated sample words. Progress stays isolated in memory for this session.</string>
+    <string name="auth_enter_demo">Enter Demo Mode</string>
+    <string name="auth_provider_note">Note: Google Sign-In is active in this build. Email/password can be enabled separately in Firebase Console.</string>
+
+    <string name="onboarding_title">Choose Your Study Focus</string>
+    <string name="onboarding_subtitle">Your goal and level set defaults; you can update them anytime in Settings.</string>
+    <string name="onboarding_goal_label">Study Goal</string>
+    <string name="onboarding_exam_disclaimer">SAT, IELTS, and AP labels are study goal tags only; Contexta makes no official exam partnership or score prediction claims.</string>
+    <string name="onboarding_level_label">CEFR Level</string>
+    <string name="onboarding_daily_goal_label">Daily Goal</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="minutes_format">%d min</string>
+
+    <string name="exam_general">General English</string>
+    <string name="exam_sat">SAT</string>
+    <string name="exam_ielts">IELTS</string>
+    <string name="exam_ap_academic">AP &amp; Academic</string>
+
+    <!-- Status & Badges -->
+    <string name="sync_badge_demo">Demo</string>
+    <string name="sync_badge_pending">Local</string>
+    <string name="sync_badge_synced">Synced</string>
+    <string name="demo_mode_banner_text">Demo Mode active — data stays isolated in local memory and is not written to a cloud account.</string>
+    <string name="offline_notice">Offline mode — changes will sync automatically when online.</string>
+    <string name="loading_default">Loading…</string>
+
+    <!-- Home -->
+    <string name="home_today_summary">Today\'s Summary</string>
+    <string name="home_daily_progress_label">Daily study time</string>
+    <string name="home_daily_progress_value">%1$d / %2$d min</string>
+    <string name="home_due_cards_title">%d cards due today</string>
+    <string name="home_due_cards_none">All scheduled reviews complete</string>
+    <string name="home_total_words_subtitle">%d saved expressions total</string>
+    <string name="home_start_review">Start review</string>
+    <string name="home_continue_study_title">Continue last study</string>
+    <string name="home_continue_study_subtitle">Jump directly back to your recent topic or passage</string>
+    <string name="home_quick_shortcuts">Quick Start</string>
+    <string name="home_shortcut_voice">Voice Add Word</string>
+    <string name="home_overlay_title">Floating Word Capture</string>
+    <string name="home_overlay_perm_missing">Display over other apps permission required</string>
+    <string name="home_overlay_running">Floating bubble is active</string>
+    <string name="home_overlay_ready">Ready — launch before watching or reading</string>
+    <string name="home_overlay_grant_perm">Grant Permission</string>
+    <string name="home_overlay_start">Start</string>
+    <string name="home_overlay_stop">Stop</string>
+    <string name="home_recent_words_title">Recent Words</string>
+
+    <!-- Overlay Service -->
+    <string name="overlay_channel_name">Floating Capture Bubble</string>
+    <string name="overlay_channel_desc">Persistent notification while the floating capture bubble is active</string>
+    <string name="overlay_notif_title">Contexta Quick Capture Active</string>
+    <string name="overlay_notif_text">Tap the floating bubble to save a word in context</string>
+    <string name="overlay_notif_stop">Stop</string>
+    <string name="overlay_bubble_cd">Floating word capture bubble</string>
+    <string name="overlay_panel_title">Quick Save with Context</string>
+    <string name="overlay_hint_word">English word or phrase</string>
+    <string name="overlay_hint_context">Context sentence (optional)</string>
+    <string name="overlay_hint_source">Source (e.g., YouTube, Article)</string>
+    <string name="overlay_error_empty_word">Please enter a word or phrase.</string>
+    <string name="overlay_error_sign_in_needed">Sign in or start Demo Mode to save words.</string>
+    <string name="overlay_error_save_failed">Could not save. Your text is preserved; try again.</string>
+    <string name="overlay_saved_feedback">Saved</string>
+    <string name="overlay_voice_redirect_permission">Opening in-app voice capture to request microphone access.</string>
+    <string name="overlay_voice_redirect_restricted">Microphone restricted from overlay; opened in-app voice capture.</string>
+
+    <!-- Vocabulary & Flashcards & Voice -->
+    <string name="vocab_srs_banner_title">Due for review: %d</string>
+    <string name="vocab_total_count_label">%d total words</string>
+    <string name="vocab_search_hint">Search words, meanings, or sources…</string>
+    <string name="vocab_filter_all">All</string>
+    <string name="vocab_filter_due">Due Today</string>
+    <string name="vocab_filter_new">New</string>
+    <string name="vocab_filter_favorites">Favorites</string>
+    <string name="vocab_empty_title">No words saved yet</string>
+    <string name="vocab_empty_subtitle">Capture words and phrases with real sentences as you watch or read.</string>
+    <string name="vocab_add_word">Add Word</string>
+    <string name="vocab_favorite_cd">Toggle favorite</string>
+    <string name="vocab_field_expression">English word / phrase</string>
+    <string name="vocab_field_meaning_tr">Turkish meaning</string>
+    <string name="vocab_field_definition_en">English definition (optional)</string>
+    <string name="vocab_field_pos">Part of speech (noun, verb…)</string>
+    <string name="vocab_field_tags">Tags (comma separated)</string>
+    <string name="vocab_field_context_sentence">Context sentence</string>
+    <string name="vocab_field_source_title">Source title</string>
+    <string name="vocab_field_note">Personal note</string>
+    <string name="vocab_detail_title">Word Details</string>
+    <string name="vocab_not_found_title">Word not found</string>
+    <string name="vocab_not_found_subtitle">This entry may have been deleted or not yet synced.</string>
+    <string name="vocab_srs_stats_title">Spaced Repetition Schedule</string>
+    <string name="vocab_srs_stats_body">Interval: %1$d d  •  Reps: %2$d  •  Ease: %3$.2f</string>
+    <string name="vocab_ai_helper_title">Optional Context Insight</string>
+    <string name="vocab_ai_helper_cta">Suggest Meaning &amp; Note</string>
+    <string name="vocab_ai_apply_meaning">Fill empty fields</string>
+    <string name="vocab_contexts_header">Context Examples (%d)</string>
+    <string name="vocab_add_context">Add Context</string>
+    <string name="vocab_delete_confirm_title">Delete word</string>
+    <string name="vocab_delete_confirm_body">Permanently delete \"%s\" and all its context examples?</string>
+
+    <string name="flashcard_title">Spaced Repetition</string>
+    <string name="flashcard_all_caught_up_title">All caught up for today</string>
+    <string name="flashcard_all_caught_up_subtitle">You have completed all scheduled cards. You can still run an extra practice session.</string>
+    <string name="flashcard_practice_anyway">Practice Anyway</string>
+    <string name="flashcard_summary_title">Session Complete</string>
+    <string name="flashcard_summary_reviewed">Reviewed %d cards</string>
+    <string name="flashcard_summary_breakdown">Recalled: %1$d  •  Again: %2$d</string>
+    <string name="flashcard_progress">%1$d / %2$d</string>
+    <string name="flashcard_show_answer">Show Meaning</string>
+    <string name="flashcard_rate_again">Again</string>
+    <string name="flashcard_rate_hard">Hard</string>
+    <string name="flashcard_rate_good">Good</string>
+    <string name="flashcard_rate_easy">Easy</string>
+
+    <string name="voice_capture_title">English Voice Capture</string>
+    <string name="voice_capture_instruction">Tap the microphone and speak an English word or phrase. You can edit the text before saving.</string>
+    <string name="voice_tap_to_speak">Tap to speak</string>
+    <string name="voice_listening">Listening (en-US)…</string>
+    <string name="voice_listening_stop">Stop Listening</string>
+    <string name="voice_mic_cd">English voice input microphone</string>
+    <string name="voice_permission_denied">Microphone permission denied. You can still type manually below.</string>
+    <string name="voice_error_unavailable">Speech recognition service is unavailable on this device.</string>
+    <string name="voice_error_no_match">Could not recognize speech. Try again or type manually.</string>
+    <string name="voice_error_try_again">Voice recognition did not complete. Please try again.</string>
+    <string name="voice_recognized_edit">Recognized — edit or save below</string>
+
+    <!-- Study Hub & Practice -->
+    <string name="study_hub_title">Study Modules</string>
+    <string name="study_hub_subtitle">Each section has its own sequence, exercises, and results.</string>
+    <string name="study_grammar_badge">15 Topics</string>
+    <string name="study_grammar_desc">Clear rules, common mistakes, and explained multiple-choice quizzes.</string>
+    <string name="study_reading_badge">8 Passages</string>
+    <string name="study_reading_desc">Tap-to-save words in context, evidence highlighting, and comprehension checks.</string>
+    <string name="study_listening_badge">3 Lessons</string>
+    <string name="study_listening_desc">Speed control, collapsible transcript, and listening comprehension questions.</string>
+
+    <string name="grammar_completion_pct">Completion: %d%%</string>
+    <string name="grammar_accuracy_pct">Accuracy: %d%%</string>
+    <string name="grammar_examples_title">Correct / Incorrect Examples</string>
+    <string name="grammar_mistakes_title">Common Mistakes</string>
+    <string name="grammar_quiz_title">Mini Quiz (%d questions)</string>
+
+    <string name="reading_all_genres">All Genres</string>
+    <string name="reading_font_size_cd">Increase text size</string>
+    <string name="reading_tap_word_hint">Tap any word in the passage or use the paragraph button to save it with context.</string>
+    <string name="reading_save_from_paragraph">Save Word from Paragraph</string>
+    <string name="reading_evidence_highlighted">Evidence Paragraph</string>
+    <string name="reading_show_evidence">Highlight evidence in passage</string>
+    <string name="reading_questions_header">Reading Questions (%d)</string>
+
+    <string name="listening_type_lecture">Lecture</string>
+    <string name="listening_type_dialogue">Dialogue</string>
+    <string name="listening_type_story">Short Story</string>
+    <string name="listening_questions_count">%d questions</string>
+    <string name="listening_mode_tts_label">Text-to-Speech (Android TTS)</string>
+    <string name="listening_mode_media3_label">Audio Player (Media3)</string>
+    <string name="listening_tts_line_progress">Line %1$d / %2$d</string>
+    <string name="listening_tts_seek_notice">In TTS mode, step through lines instead of scrubbing a timeline.</string>
+    <string name="listening_play">Play</string>
+    <string name="listening_pause">Pause</string>
+    <string name="listening_play_pause_cd">Play or pause</string>
+    <string name="listening_prev_line_cd">Previous line</string>
+    <string name="listening_next_line_cd">Next line</string>
+    <string name="listening_replay_10_cd">Rewind 10 seconds</string>
+    <string name="listening_forward_10_cd">Forward 10 seconds</string>
+    <string name="listening_show_transcript">Show Transcript</string>
+    <string name="listening_hide_transcript">Hide Transcript</string>
+    <string name="listening_questions_header">Comprehension Questions (%d)</string>
+
+    <string name="practice_check_answers">Check Answers</string>
+    <string name="practice_correct_label">Correct</string>
+    <string name="practice_wrong_label">Incorrect</string>
+    <string name="practice_score_result">Score: %1$d / %2$d correct</string>
+    <string name="practice_retry_quiz">Retry Quiz</string>
+
+    <!-- Progress -->
+    <string name="progress_7_days">7 days</string>
+    <string name="progress_30_days">30 days</string>
+    <string name="progress_empty_title">No study activity yet</string>
+    <string name="progress_empty_subtitle">Complete flashcard reviews or practice exercises to see real statistics here.</string>
+    <string name="progress_minutes_label">Study (min)</string>
+    <string name="progress_reviews_label">Cards reviewed</string>
+    <string name="progress_new_words_label">New words</string>
+    <string name="progress_daily_chart_title">Daily Study Minutes</string>
+    <string name="progress_accuracy_title">Module Accuracy</string>
+    <string name="progress_weak_areas_title">Areas to Improve</string>
+    <string name="progress_no_weak_areas">No topics currently below 80% accuracy.</string>
+    <string name="progress_attempts_ratio">%1$d / %2$d correct</string>
+
+    <!-- Settings -->
+    <string name="settings_account_section">Account</string>
+    <string name="settings_signed_in_user">Signed in</string>
+    <string name="settings_sign_out">Sign Out</string>
+    <string name="settings_language_label">Interface Language</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="settings_theme_label">Theme</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_overlay_scale">Bubble scale: %d%%</string>
+    <string name="settings_overlay_alpha">Opacity: %d%%</string>
+    <string name="settings_data_section">Backup &amp; Account Deletion</string>
+    <string name="settings_export_json">Export JSON</string>
+    <string name="settings_import_json">Import JSON</string>
+    <string name="settings_export_success">Backup JSON exported.</string>
+    <string name="settings_delete_all_data">Delete All Data &amp; Account</string>
+    <string name="settings_delete_confirm_title">Delete Account and All Data?</string>
+    <string name="settings_delete_confirm_body">All saved vocabulary, contexts, study history, and your Firebase account will be permanently deleted.</string>
+</resources>

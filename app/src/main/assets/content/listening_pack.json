@@ -1,0 +1,302 @@
+{
+  "lessons": [
+    {
+      "id": "list_01_academic_lecture",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B2",
+      "contentType": "ACADEMIC_LECTURE",
+      "targetExams": ["IELTS", "SAT", "AP_ACADEMIC"],
+      "title": "Why Cities Redesign Floodplain Parks",
+      "tags": ["urban-planning", "climate"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "audioMode": "TTS",
+      "audioUri": null,
+      "transcript": [
+        {
+          "id": "l1_t1",
+          "speaker": "Lecturer",
+          "text": "Good morning, everyone. Today we are examining a shift in how coastal and riverside cities manage heavy storm runoff."
+        },
+        {
+          "id": "l1_t2",
+          "speaker": "Lecturer",
+          "text": "For most of the twentieth century, engineers relied on concrete floodwalls and straight drainage channels to push rainwater away as fast as possible."
+        },
+        {
+          "id": "l1_t3",
+          "speaker": "Lecturer",
+          "text": "However, when extreme rainfall overwhelms those rigid pipes, floodwater backs up into basements and subways."
+        },
+        {
+          "id": "l1_t4",
+          "speaker": "Lecturer",
+          "text": "Instead, many planners now design sunken parks—sometimes called sponge parks—with permeable soil, native reeds, and terraced paths."
+        },
+        {
+          "id": "l1_t5",
+          "speaker": "Lecturer",
+          "text": "During dry weeks, families use the fields for picnics and running. When a storm arrives, the park intentionally floods, holding thousands of cubic meters of water until drains recover."
+        }
+      ],
+      "questions": [
+        {
+          "id": "l01_q1",
+          "prompt": "What was the main limitation of twentieth-century concrete drainage channels mentioned by the lecturer?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "They cost too much to paint each year.", "explanationTr": "Boyama maliyetinden söz edilmiyor." },
+            { "id": "b", "text": "Extreme storms can overwhelm them and push water into basements and subways.", "explanationTr": "Ders, aşırı yağışta sert boruların taşıp bodrumlara ve metrolara su bastığını anlatır." },
+            { "id": "c", "text": "They prevented native reeds from growing in deserts.", "explanationTr": "Yanlış bağlam." },
+            { "id": "d", "text": "They could only operate during winter.", "explanationTr": "Metinde geçmiyor." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Konuşmacı aşırı yağışların sert kanalları aşarak bodrum ve metrolarda taşkına yol açtığını vurgular.",
+          "evidenceRefId": "l1_t3"
+        },
+        {
+          "id": "l01_q2",
+          "prompt": "Why are the redesigned green areas called 'sponge parks'?",
+          "questionType": "Concept",
+          "options": [
+            { "id": "a", "text": "They absorb and temporarily store storm water in permeable soil.", "explanationTr": "Geçirgen toprak ve çukur tasarım sayesinde fırtına suyunu emer ve tutarlar." },
+            { "id": "b", "text": "They are paved with synthetic foam.", "explanationTr": "Doğal toprak ve sazlıklar kullanılır." },
+            { "id": "c", "text": "They are closed to the public all year.", "explanationTr": "Kuru haftalarda piknik ve koşu için kullanılırlar." },
+            { "id": "d", "text": "They pump ocean water onto streets.", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Parklar kuru havada sosyal alan, yağışta ise suyu geçici olarak tutan sünger görevi görür.",
+          "evidenceRefId": "l1_t4"
+        },
+        {
+          "id": "l01_q3",
+          "prompt": "According to the lecturer, what happens in these parks during dry weather?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "They remain fenced off for repairs.", "explanationTr": "Kuru haftalarda kullanıma açıktırlar." },
+            { "id": "b", "text": "Residents use them for everyday recreation such as picnics and running.", "explanationTr": "Transkriptte ailelerin piknik ve koşu için kullandığı belirtilir." },
+            { "id": "c", "text": "Engineers fill them with concrete.", "explanationTr": "Yanlış." },
+            { "id": "d", "text": "Subways are rerouted through them.", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Son bölümde kuru günlerde halkın piknik ve koşu amacıyla kullandığı açıkça söylenir.",
+          "evidenceRefId": "l1_t5"
+        },
+        {
+          "id": "l01_q4",
+          "prompt": "What is the lecturer's overall attitude toward sponge parks?",
+          "questionType": "Speaker Attitude",
+          "options": [
+            { "id": "a", "text": "Skeptical that soil can absorb water", "explanationTr": "Konuşmacı tam tersine avantajlarını açıklar." },
+            { "id": "b", "text": "Informative and favorable toward adaptive multi-use design", "explanationTr": "Hem günlük kullanım hem taşkın kontrolü sağlayan uyarlanabilir yaklaşımı olumlu anlatır." },
+            { "id": "c", "text": "Indifferent to urban flooding", "explanationTr": "Yanlış." },
+            { "id": "d", "text": "Nostalgic for concrete floodwalls", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Konuşmacı çok amaçlı ve esnek tasarımın geleneksel kanallara kıyasla nasıl çözüm sunduğunu nesnel ve destekleyici biçimde aktarır.",
+          "evidenceRefId": "l1_t5"
+        }
+      ]
+    },
+    {
+      "id": "list_02_dialogue",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "B1",
+      "contentType": "DIALOGUE",
+      "targetExams": ["IELTS", "GENERAL"],
+      "title": "Scheduling a Research Lab Orientation",
+      "tags": ["campus", "dialogue"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "audioMode": "TTS",
+      "audioUri": null,
+      "transcript": [
+        {
+          "id": "l2_t1",
+          "speaker": "Advisor",
+          "text": "Hi Deniz, thanks for stopping by. Before you start using the acoustics lab next week, you'll need to complete the safety orientation."
+        },
+        {
+          "id": "l2_t2",
+          "speaker": "Deniz",
+          "text": "Sure, I checked the online portal, and I saw two sessions: Wednesday at two p.m. and Thursday at ten a.m."
+        },
+        {
+          "id": "l2_t3",
+          "speaker": "Advisor",
+          "text": "Wednesday afternoon is nearly full, and we also inspect the soundproof chamber during the Thursday group because the room is free then."
+        },
+        {
+          "id": "l2_t4",
+          "speaker": "Deniz",
+          "text": "Thursday at ten works great for my schedule. Should I bring my laptop or just a notebook?"
+        },
+        {
+          "id": "l2_t5",
+          "speaker": "Advisor",
+          "text": "Bring your student ID and closed-toe shoes; laptops aren't necessary until your first recording session on Monday."
+        }
+      ],
+      "questions": [
+        {
+          "id": "l02_q1",
+          "prompt": "Why does the advisor recommend the Thursday morning orientation?",
+          "questionType": "Reason",
+          "options": [
+            { "id": "a", "text": "Wednesday is almost full and Thursday includes inspecting the soundproof chamber.", "explanationTr": "Çarşamba dolmak üzere ve ses yalıtımlı oda Perşembe boş olduğu için incelenebiliyor." },
+            { "id": "b", "text": "The portal is closed on Wednesdays.", "explanationTr": "Böyle bir şey söylenmiyor." },
+            { "id": "c", "text": "Deniz has an exam on Thursday at ten.", "explanationTr": "Deniz Perşembe saat 10'un programına çok uygun olduğunu söylüyor." },
+            { "id": "d", "text": "Recording sessions happen every Thursday.", "explanationTr": "İlk kayıt Pazartesi günü." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Danışman hem Çarşamba kontenjanının dolduğunu hem de ses yalıtımlı odanın Perşembe boş olduğunu belirtir.",
+          "evidenceRefId": "l2_t3"
+        },
+        {
+          "id": "l02_q2",
+          "prompt": "What does Deniz need to bring to the orientation?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "A laptop and a microphone", "explanationTr": "Danışman dizüstü bilgisayarın henüz gerekmediğini söyler." },
+            { "id": "b", "text": "A student ID and closed-toe shoes", "explanationTr": "Son replikte öğrenci kimliği ve kapalı ayakkabı istenir." },
+            { "id": "c", "text": "Printed lab reports", "explanationTr": "Söz edilmiyor." },
+            { "id": "d", "text": "Only a notebook", "explanationTr": "Kimlik ve ayakkabı gereklidir." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Danışman öğrenci kimliği ve kapalı ayakkabı getirmesini ister.",
+          "evidenceRefId": "l2_t5"
+        },
+        {
+          "id": "l02_q3",
+          "prompt": "When will Deniz's first actual recording session take place?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "Wednesday afternoon", "explanationTr": "Yanlış." },
+            { "id": "b", "text": "Thursday morning", "explanationTr": "Perşembe yalnızca güvenlik oryantasyonudur." },
+            { "id": "c", "text": "Next Monday", "explanationTr": "Son cümlede 'first recording session on Monday' denir." },
+            { "id": "d", "text": "Next Friday", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "c",
+          "explanationTr": "Danışman ilk kayıt oturumunun Pazartesi olacağını belirtir.",
+          "evidenceRefId": "l2_t5"
+        },
+        {
+          "id": "l02_q4",
+          "prompt": "What can be inferred about the acoustics lab rules?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "Students must complete safety training before using lab equipment independently.", "explanationTr": "İlk replikte laboratuvarı kullanmadan önce güvenlik oryantasyonunun şart olduğu belirtilir." },
+            { "id": "b", "text": "Open sandals are encouraged in the chamber.", "explanationTr": "Kapalı ayakkabı şartı bunun tersini gösterir." },
+            { "id": "c", "text": "Laptops are permanently banned from the lab.", "explanationTr": "Pazartesi kayıt oturumunda kullanılacaktır." },
+            { "id": "d", "text": "Orientations are held online only.", "explanationTr": "Oda gezisi yüz yüzedir." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Danışman gelecek hafta laboratuvarı kullanmadan önce güvenlik eğitiminin tamamlanmasını zorunlu tutmaktadır.",
+          "evidenceRefId": "l2_t1"
+        }
+      ]
+    },
+    {
+      "id": "list_03_short_story",
+      "schemaVersion": 1,
+      "contentVersion": 1,
+      "level": "C1",
+      "contentType": "SHORT_STORY",
+      "targetExams": ["GENERAL", "SAT"],
+      "title": "The Watchmaker's Ledger",
+      "tags": ["fiction", "short-story"],
+      "status": "published",
+      "source": "Contexta Editorial Curriculum",
+      "license": "CC-BY-4.0",
+      "reviewedAt": "2026-11-16",
+      "audioMode": "TTS",
+      "audioUri": null,
+      "transcript": [
+        {
+          "id": "l3_t1",
+          "speaker": "Narrator",
+          "text": "Every November, when rain streaked the brass sign above his shop, Arthur opened the cloth-bound ledger his grandfather had started in 1928."
+        },
+        {
+          "id": "l3_t2",
+          "speaker": "Narrator",
+          "text": "Each page recorded not merely pocket watches and spring tensions, but brief notes about the owners: a ferry captain's salt-stained chronometer, a violinist's silver pendant watch."
+        },
+        {
+          "id": "l3_t3",
+          "speaker": "Narrator",
+          "text": "That Tuesday, a young archivist stepped inside carrying a wrapped parcel and asked whether a tarnished railway watch could still keep honest time."
+        },
+        {
+          "id": "l3_t4",
+          "speaker": "Narrator",
+          "text": "Arthur turned the dial toward the lamp, spotted the tiny serial number etched inside the case, and smiled—because that very number appeared on page twelve of the ledger."
+        }
+      ],
+      "questions": [
+        {
+          "id": "l03_q1",
+          "prompt": "What made Arthur's grandfather's ledger unusual compared with a standard repair log?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "It included personal notes about the watch owners alongside technical details.", "explanationTr": "İkinci cümlede yalnızca yay tansiyonları değil sahipler hakkında kısa notlar da tutulduğu söylenir." },
+            { "id": "b", "text": "It listed train timetables from 1928.", "explanationTr": "Metinde geçmiyor." },
+            { "id": "c", "text": "It was written entirely in code.", "explanationTr": "Yanlış." },
+            { "id": "d", "text": "It recorded only unsold clocks.", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Defter teknik onarım bilgilerinin yanında saat sahiplerinin hikâyelerinden de izler taşır.",
+          "evidenceRefId": "l3_t2"
+        },
+        {
+          "id": "l03_q2",
+          "prompt": "What did the young archivist want to know?",
+          "questionType": "Detail",
+          "options": [
+            { "id": "a", "text": "How much the shop's brass sign cost", "explanationTr": "Yanlış." },
+            { "id": "b", "text": "Whether an old railway watch could be repaired to keep accurate time again", "explanationTr": "Üçüncü satırda 'keep honest time' ifadesiyle bunu sorar." },
+            { "id": "c", "text": "Where to buy a violinist's pendant", "explanationTr": "Yanlış." },
+            { "id": "d", "text": "Why Arthur opened the shop in November", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "b",
+          "explanationTr": "Genç arşivci kararmış demiryolu saatinin hâlâ doğru zaman tutup tutamayacağını sorar.",
+          "evidenceRefId": "l3_t3"
+        },
+        {
+          "id": "l03_q3",
+          "prompt": "Why did Arthur smile at the end of the passage?",
+          "questionType": "Inference",
+          "options": [
+            { "id": "a", "text": "He recognized the watch's serial number from an earlier entry in his family ledger.", "explanationTr": "Seri numarasının defterin 12. sayfasında zaten kayıtlı olduğunu fark etti." },
+            { "id": "b", "text": "The archivist offered to buy the ledger.", "explanationTr": "Metinde geçmiyor." },
+            { "id": "c", "text": "The watch turned out to be brand new.", "explanationTr": "Kararmış eski bir saatti." },
+            { "id": "d", "text": "The rain finally stopped outside.", "explanationTr": "Gülümsemenin nedeni seri numarasıdır." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "Saatin seri numarasının büyükbabasının defterindeki 12. sayfada yer alması geçmişle kurulan bağı gösterir.",
+          "evidenceRefId": "l3_t4"
+        },
+        {
+          "id": "l03_q4",
+          "prompt": "In this story, the phrase 'keep honest time' most nearly means:",
+          "questionType": "Words in Context",
+          "options": [
+            { "id": "a", "text": "run accurately without gaining or losing minutes", "explanationTr": "Saatçilikte doğru ve şaşmadan çalışmayı ifade eder." },
+            { "id": "b", "text": "chime loudly every hour", "explanationTr": "Bağlama uymaz." },
+            { "id": "c", "text": "display the owner's name", "explanationTr": "Yanlış." },
+            { "id": "d", "text": "resist water damage", "explanationTr": "Yanlış." }
+          ],
+          "correctOptionId": "a",
+          "explanationTr": "'Keep honest time' edebi anlatımda saatin doğru ve güvenilir biçimde zaman göstermesi demektir.",
+          "evidenceRefId": "l3_t3"
+        }
+      ]
+    }
+  ]
+}

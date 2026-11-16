@@ -1,0 +1,243 @@
+<resources>
+    <string name="app_name">Contexta</string>
+
+    <!-- Actions -->
+    <string name="action_back">Geri</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_clear">Temizle</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_done">Tamam</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_retry">Tekrar Dene</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_see_all">Tümü</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_vocabulary">Kelimeler</string>
+    <string name="nav_study">Çalış</string>
+    <string name="nav_progress">İlerleme</string>
+    <string name="nav_settings">Ayarlar</string>
+
+    <!-- Modules -->
+    <string name="module_grammar">Grammar</string>
+    <string name="module_reading">Reading</string>
+    <string name="module_listening">Listening</string>
+
+    <!-- Auth & Onboarding -->
+    <string name="auth_tagline">İzlediğin ve okuduğun bağlamlarla İngilizce çalış.</string>
+    <string name="auth_account_title">Bulut Hesabı</string>
+    <string name="auth_account_subtitle">Kelimelerini, bağlamlarını ve tekrar planını Google hesabınla senkronize et.</string>
+    <string name="auth_google_sign_in">Google ile Giriş Yap</string>
+    <string name="auth_cancelled">Giriş iptal edildi.</string>
+    <string name="auth_checking_session">Oturum kontrol ediliyor…</string>
+    <string name="auth_demo_title">Demo Modu</string>
+    <string name="auth_demo_subtitle">Hesap açmadan hazır örnek kelimeler ve tüm çalışma modülleriyle uygulamayı dene. İlerleme yalnızca bu oturumda tutulur.</string>
+    <string name="auth_enter_demo">Demo Modunu Başlat</string>
+    <string name="auth_provider_note">Not: Aktif derlemede Google ile tek dokunuşlu giriş etkindir. E-posta/şifre sağlayıcısı Firebase konsolundan ayrıca etkinleştirilebilir.</string>
+
+    <string name="onboarding_title">Çalışma Planını Seç</string>
+    <string name="onboarding_subtitle">Hedefin ve seviyen başlangıç ayarlarını belirler; daha sonra Ayarlar bölümünden değiştirebilirsin.</string>
+    <string name="onboarding_goal_label">Çalışma Hedefi</string>
+    <string name="onboarding_exam_disclaimer">SAT, IELTS ve AP etiketleri yalnızca çalışma hedefi belirlemek içindir; resmî sınav ortaklığı veya puan tahmini sunmaz.</string>
+    <string name="onboarding_level_label">CEFR Seviyesi</string>
+    <string name="onboarding_daily_goal_label">Günlük Hedef</string>
+    <string name="onboarding_continue">Devam Et</string>
+    <string name="minutes_format">%d dk</string>
+
+    <string name="exam_general">Genel İngilizce</string>
+    <string name="exam_sat">SAT</string>
+    <string name="exam_ielts">IELTS</string>
+    <string name="exam_ap_academic">AP &amp; Akademik</string>
+
+    <!-- Status & Badges -->
+    <string name="sync_badge_demo">Demo</string>
+    <string name="sync_badge_pending">Yerel</string>
+    <string name="sync_badge_synced">Eşitlendi</string>
+    <string name="demo_mode_banner_text">Demo Modu aktif — değişiklikler yalnızca cihaz içi bellekte tutulur ve gerçek hesaba aktarılmaz.</string>
+    <string name="offline_notice">Çevrimdışı mod — değişiklikler bağlantı geldiğinde eşitlenir.</string>
+    <string name="loading_default">Yükleniyor…</string>
+
+    <!-- Home -->
+    <string name="home_today_summary">Bugünün Özeti</string>
+    <string name="home_daily_progress_label">Günlük çalışma süresi</string>
+    <string name="home_daily_progress_value">%1$d / %2$d dk</string>
+    <string name="home_due_cards_title">Bugün %d kart tekrar bekliyor</string>
+    <string name="home_due_cards_none">Bugünkü tekrarlar tamamlandı</string>
+    <string name="home_total_words_subtitle">Toplam %d kayıtlı ifade</string>
+    <string name="home_start_review">Tekrara başla</string>
+    <string name="home_continue_study_title">Son çalışmaya devam et</string>
+    <string name="home_continue_study_subtitle">Kaldığın konuyu veya metni doğrudan aç</string>
+    <string name="home_quick_shortcuts">Hızlı Başlangıç</string>
+    <string name="home_shortcut_voice">Sesli Kelime Ekle</string>
+    <string name="home_overlay_title">Yüzen Kelime Yakalama</string>
+    <string name="home_overlay_perm_missing">Diğer uygulamaların üzerinde gösterim izni gerekli</string>
+    <string name="home_overlay_running">Yüzen balon ekranda aktif</string>
+    <string name="home_overlay_ready">İzin hazır — video izlerken başlatabilirsin</string>
+    <string name="home_overlay_grant_perm">İzin Ver</string>
+    <string name="home_overlay_start">Başlat</string>
+    <string name="home_overlay_stop">Durdur</string>
+    <string name="home_recent_words_title">Son Kaydedilenler</string>
+
+    <!-- Overlay Service -->
+    <string name="overlay_channel_name">Yüzen Yakalama Balonu</string>
+    <string name="overlay_channel_desc">Video izlerken veya okurken hızlı kelime kaydetmek için yüzen balon bildirimi</string>
+    <string name="overlay_notif_title">Contexta Hızlı Yakalama Aktif</string>
+    <string name="overlay_notif_text">Kelime eklemek için yüzen balona dokun</string>
+    <string name="overlay_notif_stop">Kapat</string>
+    <string name="overlay_bubble_cd">Yüzen kelime ekleme balonu</string>
+    <string name="overlay_panel_title">Bağlamla Hızlı Kaydet</string>
+    <string name="overlay_hint_word">İngilizce kelime veya kalıp</string>
+    <string name="overlay_hint_context">Bağlam cümlesi (isteğe bağlı)</string>
+    <string name="overlay_hint_source">Kaynak (ör. YouTube, Makale)</string>
+    <string name="overlay_error_empty_word">Lütfen bir kelime veya kalıp yaz.</string>
+    <string name="overlay_error_sign_in_needed">Kaydetmek için giriş yap veya Demo modunu aç.</string>
+    <string name="overlay_error_save_failed">Kaydedilemedi. Metnin korundu, tekrar deneyebilirsin.</string>
+    <string name="overlay_saved_feedback">Kaydedildi</string>
+    <string name="overlay_voice_redirect_permission">Mikrofon izni için uygulama içi sesli yakalama açılıyor.</string>
+    <string name="overlay_voice_redirect_restricted">Sistem bu ekrandan mikrofona izin vermedi; uygulama içi ses ekranı açıldı.</string>
+
+    <!-- Vocabulary & Flashcards & Voice -->
+    <string name="vocab_srs_banner_title">Tekrar bekleyen: %d kart</string>
+    <string name="vocab_total_count_label">Toplam %d kelime</string>
+    <string name="vocab_search_hint">Kelime, Türkçe anlam veya kaynak ara…</string>
+    <string name="vocab_filter_all">Tümü</string>
+    <string name="vocab_filter_due">Bugün</string>
+    <string name="vocab_filter_new">Yeni</string>
+    <string name="vocab_filter_favorites">Favoriler</string>
+    <string name="vocab_empty_title">Henüz kelime bulunmuyor</string>
+    <string name="vocab_empty_subtitle">Video veya okumalardan karşılaştığın ifadeleri bağlam cümlesiyle ekle.</string>
+    <string name="vocab_add_word">Kelime Ekle</string>
+    <string name="vocab_favorite_cd">Favorilere ekle veya çıkar</string>
+    <string name="vocab_field_expression">İngilizce kelime / kalıp</string>
+    <string name="vocab_field_meaning_tr">Türkçe anlam</string>
+    <string name="vocab_field_definition_en">İngilizce tanım (isteğe bağlı)</string>
+    <string name="vocab_field_pos">Sözcük türü (noun, verb…)</string>
+    <string name="vocab_field_tags">Etiketler (virgülle ayır)</string>
+    <string name="vocab_field_context_sentence">Bağlam cümlesi</string>
+    <string name="vocab_field_source_title">Kaynak başlığı</string>
+    <string name="vocab_field_note">Kişisel not</string>
+    <string name="vocab_detail_title">Kelime Detayı</string>
+    <string name="vocab_not_found_title">Kelime bulunamadı</string>
+    <string name="vocab_not_found_subtitle">Bu kayıt silinmiş veya henüz eşitlenmemiş olabilir.</string>
+    <string name="vocab_srs_stats_title">Aralıklı Tekrar Durumu</string>
+    <string name="vocab_srs_stats_body">Aralık: %1$d gün  •  Tekrar: %2$d  •  Kolaylık: %3$.2f</string>
+    <string name="vocab_ai_helper_title">İsteğe Bağlı Bağlam İpucu</string>
+    <string name="vocab_ai_helper_cta">Örnek &amp; Anlam Öner</string>
+    <string name="vocab_ai_apply_meaning">Boş alanlara uygula</string>
+    <string name="vocab_contexts_header">Bağlam Örnekleri (%d)</string>
+    <string name="vocab_add_context">Bağlam Ekle</string>
+    <string name="vocab_delete_confirm_title">Kelimeyi sil</string>
+    <string name="vocab_delete_confirm_body">\"%s\" kelimesi ve tüm bağlam örnekleri kalıcı olarak silinsin mi?</string>
+
+    <string name="flashcard_title">Aralıklı Tekrar</string>
+    <string name="flashcard_all_caught_up_title">Bugün tekrar edilecek kart kalmadı</string>
+    <string name="flashcard_all_caught_up_subtitle">Planlı kartlarının tamamını çalıştın. İstersen kayıtlı kartlarla serbest tekrar yapabilirsin.</string>
+    <string name="flashcard_practice_anyway">Serbest Tekrar Yap</string>
+    <string name="flashcard_summary_title">Tekrar Oturumu Tamamlandı</string>
+    <string name="flashcard_summary_reviewed">Toplam %d kart çalışıldı</string>
+    <string name="flashcard_summary_breakdown">Hatırlanan: %1$d  •  Tekrar: %2$d</string>
+    <string name="flashcard_progress">%1$d / %2$d</string>
+    <string name="flashcard_show_answer">Anlamı Göster</string>
+    <string name="flashcard_rate_again">Tekrar</string>
+    <string name="flashcard_rate_hard">Zor</string>
+    <string name="flashcard_rate_good">İyi</string>
+    <string name="flashcard_rate_easy">Kolay</string>
+
+    <string name="voice_capture_title">Sesli İngilizce Yakalama</string>
+    <string name="voice_capture_instruction">Mikrofona dokunup İngilizce kelimeyi veya kalıbı söyle. Tanınan metni kaydetmeden önce düzenleyebilirsin.</string>
+    <string name="voice_tap_to_speak">Konuşmak için dokun</string>
+    <string name="voice_listening">Dinleniyor (en-US)…</string>
+    <string name="voice_listening_stop">Dinlemeyi Durdur</string>
+    <string name="voice_mic_cd">İngilizce sesli giriş mikrofonu</string>
+    <string name="voice_permission_denied">Mikrofon izni reddedildi. Aşağıdan elle yazmaya devam edebilirsin.</string>
+    <string name="voice_error_unavailable">Bu cihazda ses tanıma servisi kullanılamıyor.</string>
+    <string name="voice_error_no_match">Konuşma anlaşılamadı. Tekrar dene veya elle düzenle.</string>
+    <string name="voice_error_try_again">Ses tanıma tamamlanamadı. Tekrar deneyebilirsin.</string>
+    <string name="voice_recognized_edit">Tanındı — düzenleyip kaydedebilirsin</string>
+
+    <!-- Study Hub & Practice -->
+    <string name="study_hub_title">Çalışma Modülleri</string>
+    <string name="study_hub_subtitle">Her alan kendi konu dizisi, alıştırması ve sonucuyla ayrı sunulur.</string>
+    <string name="study_grammar_badge">15 Konu</string>
+    <string name="study_grammar_desc">Türkçe konu özetleri, sık hatalar ve açıklamalı çoktan seçmeli mini testler.</string>
+    <string name="study_reading_badge">8 Akademik Metin</string>
+    <string name="study_reading_desc">Metinden kelime yakalama, kanıt paragrafı vurgulama ve anlama soruları.</string>
+    <string name="study_listening_badge">3 Ders</string>
+    <string name="study_listening_desc">Hız kontrolü, açılır transkript ve anlama sorularıyla dinleme pratiği.</string>
+
+    <string name="grammar_completion_pct">Tamamlama: %d%%</string>
+    <string name="grammar_accuracy_pct">Doğruluk: %d%%</string>
+    <string name="grammar_examples_title">Doğru / Yanlış Örnekler</string>
+    <string name="grammar_mistakes_title">Sık Yapılan Hatalar</string>
+    <string name="grammar_quiz_title">Mini Test (%d soru)</string>
+
+    <string name="reading_all_genres">Tüm Türler</string>
+    <string name="reading_font_size_cd">Yazı boyutunu büyüt</string>
+    <string name="reading_tap_word_hint">Kaydetmek için metindeki herhangi bir kelimeye dokun veya paragraf butonunu kullan.</string>
+    <string name="reading_save_from_paragraph">Paragraftan Kelime Kaydet</string>
+    <string name="reading_evidence_highlighted">Kanıt Paragrafı</string>
+    <string name="reading_show_evidence">Metindeki kanıtı göster</string>
+    <string name="reading_questions_header">Okuma Soruları (%d)</string>
+
+    <string name="listening_type_lecture">Akademik Ders</string>
+    <string name="listening_type_dialogue">Diyalog</string>
+    <string name="listening_type_story">Kısa Hikâye</string>
+    <string name="listening_questions_count">%d soru</string>
+    <string name="listening_mode_tts_label">Metinden seslendirme (Android TTS)</string>
+    <string name="listening_mode_media3_label">Ses Oynatıcı (Media3)</string>
+    <string name="listening_tts_line_progress">Satır %1$d / %2$d</string>
+    <string name="listening_tts_seek_notice">TTS modunda zaman çizelgesinde sarma yerine önceki/sonraki satır adımı kullanılır.</string>
+    <string name="listening_play">Oynat</string>
+    <string name="listening_pause">Duraklat</string>
+    <string name="listening_play_pause_cd">Oynat veya duraklat</string>
+    <string name="listening_prev_line_cd">Önceki satır</string>
+    <string name="listening_next_line_cd">Sonraki satır</string>
+    <string name="listening_replay_10_cd">10 saniye geri sar</string>
+    <string name="listening_forward_10_cd">10 saniye ileri sar</string>
+    <string name="listening_show_transcript">Transkripti Göster</string>
+    <string name="listening_hide_transcript">Transkripti Gizle</string>
+    <string name="listening_questions_header">Anlama Soruları (%d)</string>
+
+    <string name="practice_check_answers">Yanıtları Kontrol Et</string>
+    <string name="practice_correct_label">Doğru</string>
+    <string name="practice_wrong_label">Yanlış</string>
+    <string name="practice_score_result">Sonuç: %1$d / %2$d doğru</string>
+    <string name="practice_retry_quiz">Tekrar Çöz</string>
+
+    <!-- Progress -->
+    <string name="progress_7_days">7 gün</string>
+    <string name="progress_30_days">30 gün</string>
+    <string name="progress_empty_title">Henüz çalışma verisi yok</string>
+    <string name="progress_empty_subtitle">Kelime tekrarı veya alıştırma tamamladığında gerçek sonuçların burada görünür.</string>
+    <string name="progress_minutes_label">Çalışma (dk)</string>
+    <string name="progress_reviews_label">Kart tekrarı</string>
+    <string name="progress_new_words_label">Yeni kelime</string>
+    <string name="progress_daily_chart_title">Günlük Çalışma Süresi</string>
+    <string name="progress_accuracy_title">Bölüm Doğruluk Oranları</string>
+    <string name="progress_weak_areas_title">Geliştirilmesi Gereken Alanlar</string>
+    <string name="progress_no_weak_areas">Şu an %80 altında kalan bir konu görünmüyor.</string>
+    <string name="progress_attempts_ratio">%1$d / %2$d doğru</string>
+
+    <!-- Settings -->
+    <string name="settings_account_section">Hesap</string>
+    <string name="settings_signed_in_user">Oturum açık</string>
+    <string name="settings_sign_out">Oturumu Kapat</string>
+    <string name="settings_language_label">Arayüz Dili</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="language_english">English</string>
+    <string name="settings_theme_label">Tema</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="settings_overlay_scale">Balon boyutu: %d%%</string>
+    <string name="settings_overlay_alpha">Şeffaflık: %d%%</string>
+    <string name="settings_data_section">Veri Yedekleme ve Hesap Silme</string>
+    <string name="settings_export_json">JSON Dışa Aktar</string>
+    <string name="settings_import_json">JSON İçe Aktar</string>
+    <string name="settings_export_success">Yedek JSON dosyası dışa aktarıldı.</string>
+    <string name="settings_delete_all_data">Tüm Verileri ve Hesabı Sil</string>
+    <string name="settings_delete_confirm_title">Hesap ve Veriler Silinsin mi?</string>
+    <string name="settings_delete_confirm_body">Kaydedilen tüm kelimeler, bağlamlar, çalışma geçmişi ve Firebase hesabın silinir. Bu işlem geri alınamaz.</string>
+</resources>
