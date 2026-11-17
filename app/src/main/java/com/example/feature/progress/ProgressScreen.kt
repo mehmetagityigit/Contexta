@@ -25,6 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -34,6 +35,7 @@ import com.example.core.designsystem.ContextaCard
 import com.example.core.designsystem.ContextaEmptyView
 import com.example.core.designsystem.ContextaLoadingView
 import com.example.core.designsystem.DemoModeBanner
+import com.example.core.designsystem.LocalContextaColors
 import com.example.core.designsystem.StatusPill
 import com.example.core.model.PracticeScoringEngine
 
@@ -257,15 +259,17 @@ private fun DailyMinutesBarChart(
     points: List<PracticeScoringEngine.DailyStudyPoint>,
     modifier: Modifier = Modifier
 ) {
-    val barColor = MaterialTheme.colorScheme.primary
+    val ext = LocalContextaColors.current
     val trackColor = MaterialTheme.colorScheme.surfaceVariant
     Canvas(modifier = modifier) {
         if (points.isEmpty()) return@Canvas
         val maxMinutes = (points.maxOfOrNull { it.minutes } ?: 0).coerceAtLeast(10)
         val count = points.size
         val slotWidth = size.width / count.toFloat()
-        val barWidth = (slotWidth * 0.56f).coerceIn(4f, 36f)
+        val barWidth = (slotWidth * 0.52f).coerceIn(6.dp.toPx(), 28.dp.toPx())
         val heightPx = size.height
+        val barBrush = Brush.verticalGradient(colors = listOf(ext.barTop, ext.barBottom))
+        val corner = CornerRadius(10.dp.toPx(), 10.dp.toPx())
 
         points.forEachIndexed { idx, point ->
             val left = idx * slotWidth + (slotWidth - barWidth) / 2f
@@ -273,16 +277,16 @@ private fun DailyMinutesBarChart(
                 color = trackColor,
                 topLeft = Offset(left, 0f),
                 size = Size(barWidth, heightPx),
-                cornerRadius = CornerRadius(6f, 6f)
+                cornerRadius = corner
             )
             if (point.minutes > 0) {
-                val ratio = (point.minutes.toFloat() / maxMinutes.toFloat()).coerceIn(0.08f, 1f)
+                val ratio = (point.minutes.toFloat() / maxMinutes.toFloat()).coerceIn(0.10f, 1f)
                 val barHeight = heightPx * ratio
                 drawRoundRect(
-                    color = barColor,
+                    brush = barBrush,
                     topLeft = Offset(left, heightPx - barHeight),
                     size = Size(barWidth, barHeight),
-                    cornerRadius = CornerRadius(6f, 6f)
+                    cornerRadius = corner
                 )
             }
         }

@@ -230,8 +230,8 @@ class FloatingCaptureService : Service() {
             contentDescription = getString(R.string.overlay_bubble_cd)
             background = GradientDrawable().apply {
                 shape = GradientDrawable.OVAL
-                setColor(Color.parseColor("#3949AB"))
-                setStroke(dpToPx(2), Color.parseColor("#FAF9F6"))
+                setColor(Color.parseColor("#0F172A"))
+                setStroke(dpToPx(2), Color.parseColor("#FFFFFF"))
             }
             elevation = dpToPx(6).toFloat()
             alpha = currentSettings.overlayAlpha
@@ -370,11 +370,11 @@ class FloatingCaptureService : Service() {
             orientation = LinearLayout.VERTICAL
             setPadding(dpToPx(16), dpToPx(14), dpToPx(16), dpToPx(14))
             background = GradientDrawable().apply {
-                cornerRadius = dpToPx(18).toFloat()
-                setColor(Color.parseColor("#FAF9F6"))
-                setStroke(dpToPx(1), Color.parseColor("#DCE0EC"))
+                cornerRadius = dpToPx(22).toFloat()
+                setColor(Color.parseColor("#FFFFFF"))
+                setStroke(dpToPx(1), Color.parseColor("#E2E8F0"))
             }
-            elevation = dpToPx(10).toFloat()
+            elevation = dpToPx(12).toFloat()
         }
 
         // Header row
@@ -384,7 +384,7 @@ class FloatingCaptureService : Service() {
         }
         val title = TextView(this).apply {
             text = getString(R.string.overlay_panel_title)
-            setTextColor(Color.parseColor("#161D2E"))
+            setTextColor(Color.parseColor("#0F172A"))
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 16f)
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
         }
@@ -411,8 +411,8 @@ class FloatingCaptureService : Service() {
         val exprEdit = EditText(this).apply {
             hint = getString(R.string.overlay_hint_word)
             setText(draftExpression)
-            setTextColor(Color.parseColor("#161D2E"))
-            setHintTextColor(Color.parseColor("#6D768A"))
+            setTextColor(Color.parseColor("#0F172A"))
+            setHintTextColor(Color.parseColor("#64748B"))
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
             imeOptions = EditorInfo.IME_ACTION_NEXT
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
@@ -421,7 +421,7 @@ class FloatingCaptureService : Service() {
 
         val mic = ImageButton(this).apply {
             setImageResource(android.R.drawable.ic_btn_speak_now)
-            setBackgroundColor(Color.parseColor("#E7EAFA"))
+            setBackgroundColor(Color.parseColor("#DBEAFE"))
             contentDescription = getString(R.string.voice_mic_cd)
             minimumWidth = dpToPx(48)
             minimumHeight = dpToPx(48)
@@ -435,8 +435,8 @@ class FloatingCaptureService : Service() {
         val ctxEdit = EditText(this).apply {
             hint = getString(R.string.overlay_hint_context)
             setText(draftContext)
-            setTextColor(Color.parseColor("#161D2E"))
-            setHintTextColor(Color.parseColor("#6D768A"))
+            setTextColor(Color.parseColor("#0F172A"))
+            setHintTextColor(Color.parseColor("#64748B"))
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
             maxLines = 3
         }
@@ -446,8 +446,8 @@ class FloatingCaptureService : Service() {
         val srcEdit = EditText(this).apply {
             hint = getString(R.string.overlay_hint_source)
             setText(draftSource)
-            setTextColor(Color.parseColor("#161D2E"))
-            setHintTextColor(Color.parseColor("#6D768A"))
+            setTextColor(Color.parseColor("#0F172A"))
+            setHintTextColor(Color.parseColor("#64748B"))
             inputType = InputType.TYPE_CLASS_TEXT
             imeOptions = EditorInfo.IME_ACTION_DONE
         }
@@ -456,7 +456,7 @@ class FloatingCaptureService : Service() {
 
         val fbText = TextView(this).apply {
             setTextSize(TypedValue.COMPLEX_UNIT_SP, 12f)
-            setTextColor(Color.parseColor("#2E7D6B"))
+            setTextColor(Color.parseColor("#10B981"))
             visibility = View.GONE
             setPadding(0, dpToPx(6), 0, dpToPx(4))
         }
@@ -472,7 +472,7 @@ class FloatingCaptureService : Service() {
         val cancelBtn = Button(this).apply {
             text = getString(R.string.action_cancel)
             setBackgroundColor(Color.TRANSPARENT)
-            setTextColor(Color.parseColor("#545E75"))
+            setTextColor(Color.parseColor("#64748B"))
             minimumHeight = dpToPx(48)
             setOnClickListener {
                 clearDraftFields()
@@ -481,7 +481,7 @@ class FloatingCaptureService : Service() {
         }
         val saveBtn = Button(this).apply {
             text = getString(R.string.action_save)
-            setBackgroundColor(Color.parseColor("#3949AB"))
+            setBackgroundColor(Color.parseColor("#2563EB"))
             setTextColor(Color.WHITE)
             minimumHeight = dpToPx(48)
             setOnClickListener { handleSaveFromOverlay() }

@@ -20,10 +20,13 @@ data class HomeUiState(
     val isLoading: Boolean = true,
     val isDemoMode: Boolean = false,
     val isOnline: Boolean = true,
+    val displayName: String? = null,
     val settings: UserSettings = UserSettings(),
     val todayMinutes: Int = 0,
     val dueFlashcardsCount: Int = 0,
+    val masteredWordsCount: Int = 0,
     val totalWordsCount: Int = 0,
+    val weeklyDailyMinutes: List<PracticeScoringEngine.DailyStudyPoint> = emptyList(),
     val recentWords: List<VocabularyWithContext> = emptyList(),
     val lastStudyRoute: String? = null,
     val overlayRunning: Boolean = false
@@ -39,16 +42,18 @@ class HomeViewModel(
         val settings: UserSettings,
         val lastRoute: String?,
         val isOnline: Boolean,
-        val overlayRunning: Boolean
+        val overlayRunning: Boolean,
+        val profileDisplayName: String?
     )
 
     private val coreFlows = combine(
         settingsRepository.settingsFlow,
         settingsRepository.lastStudyRouteFlow,
         connectivityObserver.isOnlineFlow,
-        AppContainer.overlayRunning
-    ) { settings, lastRoute, isOnline, overlayRunning ->
-        CoreFlows(settings, lastRoute, isOnline, overlayRunning)
+        AppContainer.overlayRunning,
+        userDataRepository.observeUserProfile()
+    ) { settings, lastRoute, isOnline, overlayRunning, profile ->
+        CoreFlows(settings, lastRoute, isOnline, overlayRunning, profile?.displayName)
     }
 
     val uiState: StateFlow<HomeUiState> = combine(
@@ -69,6 +74,19 @@ class HomeViewModel(
         val dueCount = vocab.count { entry ->
             SpacedRepetitionEngine.isDueToday(statesById[entry.id], now)
         }
+        val masteredCount = vocab.count { entry ->
+            val rs = statesById[entry.id]
+            rs != null && rs.repetitionCount >= 2 && rs.intervalDays >= 6
+        }
+
+        val weeklyProgress = PracticeScoringEngine.computeProgress(
+            daysWindow = 7,
+            nowEpochMillis = now,
+            sessions = sessions,
+            attempts = emptyList(),
+            reviewEvents = emptyList(),
+            vocabulary = vocab
+        )
 
         val recent = vocab
             .sortedByDescending { it.updatedAtEpochMillis }
@@ -85,10 +103,13 @@ class HomeViewModel(
             isLoading = false,
             isDemoMode = userDataRepository.isDemoMode,
             isOnline = core.isOnline,
+            displayName = core.profileDisplayName,
             settings = core.settings,
             todayMinutes = todayMins,
             dueFlashcardsCount = dueCount,
+            masteredWordsCount = masteredCount,
             totalWordsCount = vocab.size,
+            weeklyDailyMinutes = weeklyProgress.dailyMinutes,
             recentWords = recent,
             lastStudyRoute = core.lastRoute,
             overlayRunning = core.overlayRunning

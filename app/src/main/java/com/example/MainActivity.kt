@@ -7,7 +7,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -16,13 +18,18 @@ import androidx.compose.material.icons.outlined.BarChart
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.School
 import androidx.compose.material.icons.outlined.Settings
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.NavigationRail
 import androidx.compose.material3.NavigationRailItem
+import androidx.compose.material3.NavigationRailItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -50,6 +57,7 @@ import com.example.core.data.AppContainer
 import com.example.core.data.UserDataRepository
 import com.example.core.designsystem.ContextaLoadingView
 import com.example.core.designsystem.ContextaTheme
+import com.example.core.designsystem.LocalContextaColors
 import com.example.core.firebase.FirestoreUserDataRepository
 import com.example.core.firebase.GoogleAuthManager
 import com.example.core.firebase.authStateFlow
@@ -307,29 +315,44 @@ private fun ContextaMainShell(
 
     BoxWithConstraints(modifier = Modifier.fillMaxSize()) {
         val useRail = maxWidth >= 600.dp
+        val ext = LocalContextaColors.current
 
         Scaffold(
+            containerColor = MaterialTheme.colorScheme.background,
             bottomBar = {
                 if (isTopLevel && !useRail) {
-                    NavigationBar {
-                        topTabs.forEach { tab ->
-                            val selected = when (tab.route) {
-                                HomeRoute -> currentDest?.hasRoute<HomeRoute>() == true
-                                VocabularyRoute -> currentDest?.hasRoute<VocabularyRoute>() == true
-                                StudyHubRoute -> currentDest?.hasRoute<StudyHubRoute>() == true
-                                ProgressRoute -> currentDest?.hasRoute<ProgressRoute>() == true
-                                SettingsRoute -> currentDest?.hasRoute<SettingsRoute>() == true
-                                else -> false
+                    Column {
+                        HorizontalDivider(thickness = 1.dp, color = MaterialTheme.colorScheme.outline)
+                        NavigationBar(
+                            containerColor = MaterialTheme.colorScheme.surface,
+                            tonalElevation = 0.dp
+                        ) {
+                            topTabs.forEach { tab ->
+                                val selected = when (tab.route) {
+                                    HomeRoute -> currentDest?.hasRoute<HomeRoute>() == true
+                                    VocabularyRoute -> currentDest?.hasRoute<VocabularyRoute>() == true
+                                    StudyHubRoute -> currentDest?.hasRoute<StudyHubRoute>() == true
+                                    ProgressRoute -> currentDest?.hasRoute<ProgressRoute>() == true
+                                    SettingsRoute -> currentDest?.hasRoute<SettingsRoute>() == true
+                                    else -> false
+                                }
+                                NavigationBarItem(
+                                    selected = selected,
+                                    onClick = { navigateTopTab(tab.route) },
+                                    colors = NavigationBarItemDefaults.colors(
+                                        selectedIconColor = MaterialTheme.colorScheme.onBackground,
+                                        selectedTextColor = MaterialTheme.colorScheme.onBackground,
+                                        indicatorColor = ext.navIndicator,
+                                        unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
+                                    ),
+                                    icon = {
+                                        Icon(tab.icon, contentDescription = stringResource(tab.labelRes))
+                                    },
+                                    label = { Text(stringResource(tab.labelRes)) },
+                                    modifier = Modifier.testTag(tab.testTag)
+                                )
                             }
-                            NavigationBarItem(
-                                selected = selected,
-                                onClick = { navigateTopTab(tab.route) },
-                                icon = {
-                                    Icon(tab.icon, contentDescription = stringResource(tab.labelRes))
-                                },
-                                label = { Text(stringResource(tab.labelRes)) },
-                                modifier = Modifier.testTag(tab.testTag)
-                            )
                         }
                     }
                 }
@@ -337,7 +360,7 @@ private fun ContextaMainShell(
         ) { innerPadding ->
             Row(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
                 if (isTopLevel && useRail) {
-                    NavigationRail {
+                    NavigationRail(containerColor = MaterialTheme.colorScheme.surface) {
                         topTabs.forEach { tab ->
                             val selected = when (tab.route) {
                                 HomeRoute -> currentDest?.hasRoute<HomeRoute>() == true
@@ -350,6 +373,13 @@ private fun ContextaMainShell(
                             NavigationRailItem(
                                 selected = selected,
                                 onClick = { navigateTopTab(tab.route) },
+                                colors = NavigationRailItemDefaults.colors(
+                                    selectedIconColor = MaterialTheme.colorScheme.onBackground,
+                                    selectedTextColor = MaterialTheme.colorScheme.onBackground,
+                                    indicatorColor = ext.navIndicator,
+                                    unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
+                                ),
                                 icon = {
                                     Icon(tab.icon, contentDescription = stringResource(tab.labelRes))
                                 },
@@ -358,6 +388,11 @@ private fun ContextaMainShell(
                             )
                         }
                     }
+                    VerticalDivider(
+                        modifier = Modifier.fillMaxHeight(),
+                        thickness = 1.dp,
+                        color = MaterialTheme.colorScheme.outline
+                    )
                 }
 
                 NavHost(

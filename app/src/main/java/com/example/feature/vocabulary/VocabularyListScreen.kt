@@ -27,6 +27,7 @@ import androidx.compose.material.icons.outlined.PlayArrow
 import androidx.compose.material.icons.outlined.Search
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -34,6 +35,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -54,7 +56,9 @@ import com.example.R
 import com.example.core.designsystem.ContextaCard
 import com.example.core.designsystem.ContextaEmptyView
 import com.example.core.designsystem.ContextaLoadingView
+import com.example.core.designsystem.ContextaNavyCard
 import com.example.core.designsystem.DemoModeBanner
+import com.example.core.designsystem.LocalContextaColors
 import com.example.core.designsystem.StatusPill
 import com.example.core.designsystem.SyncBadge
 import com.example.core.model.ContextSourceType
@@ -83,6 +87,9 @@ fun VocabularyListScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = { showAddDialog = true },
+                shape = MaterialTheme.shapes.medium,
+                containerColor = MaterialTheme.colorScheme.primary,
+                contentColor = MaterialTheme.colorScheme.onPrimary,
                 modifier = Modifier.testTag("vocab_add_fab")
             ) {
                 Icon(
@@ -102,9 +109,10 @@ fun VocabularyListScreen(
                 item { DemoModeBanner(modifier = Modifier.widthIn(max = 600.dp)) }
             }
 
-            // Flashcard review CTA & Voice add row
+            // Flashcard review CTA & Voice add row (Featured Dark Navy banner)
             item {
-                ContextaCard(modifier = Modifier.widthIn(max = 600.dp).fillMaxWidth()) {
+                val navy = LocalContextaColors.current
+                ContextaNavyCard(modifier = Modifier.widthIn(max = 600.dp).fillMaxWidth()) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
@@ -113,12 +121,13 @@ fun VocabularyListScreen(
                         Column(modifier = Modifier.weight(1f)) {
                             Text(
                                 text = stringResource(R.string.vocab_srs_banner_title, state.dueCount),
-                                style = MaterialTheme.typography.titleMedium
+                                style = MaterialTheme.typography.titleMedium,
+                                color = navy.onNavySurface
                             )
                             Text(
                                 text = stringResource(R.string.vocab_total_count_label, state.totalCount),
                                 style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                                color = navy.onNavyMuted
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -129,12 +138,18 @@ fun VocabularyListScreen(
                                 Icon(
                                     imageVector = Icons.Outlined.Mic,
                                     contentDescription = stringResource(R.string.voice_capture_title),
-                                    tint = MaterialTheme.colorScheme.primary
+                                    tint = navy.onNavySurface
                                 )
                             }
                             Button(
                                 onClick = onStartFlashcards,
                                 enabled = state.totalCount > 0,
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = navy.navyActionBg,
+                                    contentColor = navy.navyActionText,
+                                    disabledContainerColor = navy.navyPillBg,
+                                    disabledContentColor = navy.onNavyMuted
+                                ),
                                 modifier = Modifier.height(48.dp).testTag("vocab_start_srs_button")
                             ) {
                                 Icon(Icons.Outlined.PlayArrow, contentDescription = null, modifier = Modifier.size(18.dp))
@@ -161,6 +176,12 @@ fun VocabularyListScreen(
                         }
                     },
                     singleLine = true,
+                    shape = MaterialTheme.shapes.medium,
+                    colors = OutlinedTextFieldDefaults.colors(
+                        focusedContainerColor = MaterialTheme.colorScheme.surface,
+                        unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+                        unfocusedBorderColor = MaterialTheme.colorScheme.outline
+                    ),
                     modifier = Modifier.widthIn(max = 600.dp).fillMaxWidth().testTag("vocab_search_input")
                 )
             }

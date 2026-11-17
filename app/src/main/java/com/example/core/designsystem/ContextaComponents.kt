@@ -19,7 +19,8 @@ import androidx.compose.material.icons.outlined.CloudDone
 import androidx.compose.material.icons.outlined.CloudOff
 import androidx.compose.material.icons.outlined.CloudQueue
 import androidx.compose.material.icons.outlined.ErrorOutline
-import androidx.compose.material.icons.outlined.Science
+import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Visibility
 import androidx.compose.material3.Button
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -31,6 +32,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
@@ -44,28 +46,77 @@ fun ContextaCard(
     onClick: (() -> Unit)? = null,
     content: @Composable ColumnScope.() -> Unit
 ) {
+    val ext = LocalContextaColors.current
+    val shape = MaterialTheme.shapes.medium
     val colors = CardDefaults.outlinedCardColors(
         containerColor = MaterialTheme.colorScheme.surface
     )
-    val border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
+    val border = BorderStroke(1.dp, ext.cardBorder)
+    val cardModifier = modifier.shadow(
+        elevation = 8.dp,
+        shape = shape,
+        ambientColor = ext.cardShadow,
+        spotColor = ext.cardShadow
+    )
     if (onClick != null) {
         OutlinedCard(
             onClick = onClick,
-            modifier = modifier,
-            shape = MaterialTheme.shapes.medium,
+            modifier = cardModifier,
+            shape = shape,
             colors = colors,
             border = border
         ) {
-            Column(modifier = Modifier.padding(16.dp), content = content)
+            Column(modifier = Modifier.padding(18.dp), content = content)
         }
     } else {
         OutlinedCard(
-            modifier = modifier,
-            shape = MaterialTheme.shapes.medium,
+            modifier = cardModifier,
+            shape = shape,
             colors = colors,
             border = border
         ) {
-            Column(modifier = Modifier.padding(16.dp), content = content)
+            Column(modifier = Modifier.padding(18.dp), content = content)
+        }
+    }
+}
+
+@Composable
+fun ContextaNavyCard(
+    modifier: Modifier = Modifier,
+    onClick: (() -> Unit)? = null,
+    content: @Composable ColumnScope.() -> Unit
+) {
+    val ext = LocalContextaColors.current
+    val shape = MaterialTheme.shapes.large
+    val colors = CardDefaults.outlinedCardColors(
+        containerColor = ext.navySurface,
+        contentColor = ext.onNavySurface
+    )
+    val border = BorderStroke(1.dp, ext.navyBorder)
+    val cardModifier = modifier.shadow(
+        elevation = 12.dp,
+        shape = shape,
+        ambientColor = ext.cardShadow,
+        spotColor = ext.cardShadow
+    )
+    if (onClick != null) {
+        OutlinedCard(
+            onClick = onClick,
+            modifier = cardModifier,
+            shape = shape,
+            colors = colors,
+            border = border
+        ) {
+            Column(modifier = Modifier.padding(20.dp), content = content)
+        }
+    } else {
+        OutlinedCard(
+            modifier = cardModifier,
+            shape = shape,
+            colors = colors,
+            border = border
+        ) {
+            Column(modifier = Modifier.padding(20.dp), content = content)
         }
     }
 }
@@ -124,8 +175,7 @@ fun SyncBadge(
     when {
         syncStatus == SyncStatus.DEMO_LOCAL -> StatusPill(
             label = stringResource(R.string.sync_badge_demo),
-            icon = Icons.Outlined.Science,
-            isWarning = true,
+            icon = Icons.Outlined.Visibility,
             modifier = modifier
         )
         syncStatus == SyncStatus.PENDING_LOCAL || !isOnline -> StatusPill(
@@ -149,17 +199,18 @@ fun DemoModeBanner(
 ) {
     Surface(
         modifier = modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.tertiaryContainer,
-        shape = MaterialTheme.shapes.small
+        color = MaterialTheme.colorScheme.surface,
+        shape = MaterialTheme.shapes.small,
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
     ) {
         Row(
-            modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
+            modifier = Modifier.padding(horizontal = 14.dp, vertical = 10.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Icon(
-                imageVector = Icons.Outlined.Science,
+                imageVector = Icons.Outlined.Info,
                 contentDescription = null,
-                tint = MaterialTheme.colorScheme.tertiary,
+                tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(18.dp)
             )
             Spacer(modifier = Modifier.width(8.dp))

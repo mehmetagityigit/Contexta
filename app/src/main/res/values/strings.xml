@@ -60,6 +60,28 @@
     <string name="loading_default">Yükleniyor…</string>
 
     <!-- Home -->
+    <string name="home_greeting_user">Merhaba, %s</string>
+    <string name="home_greeting_default">Merhaba, Dil Öğrencisi</string>
+    <string name="home_greeting_subtitle">İzlediğin ve okuduğun kelimeleri anında yakala</string>
+    <string name="home_hero_kicker">BAĞLAM ODAKLI KELİME YAKALAMA</string>
+    <string name="home_hero_headline">Duyduğun İfadeleri\nAsla Unutma!</string>
+    <string name="home_hero_add_word">+ Kelime Ekle</string>
+    <string name="home_hero_practice">Pratik Yap</string>
+    <string name="home_weekly_chart_title">Haftalık Öğrenme Grafiği</string>
+    <string name="home_weekly_chart_subtitle">Günlük çalışma süresi &amp; hedef takip</string>
+    <string name="home_daily_goal_chip">Hedef: %d dk/gün</string>
+    <string name="home_metric_total_words">Toplam Kelime</string>
+    <string name="home_metric_due_now">Tekrar Vakti</string>
+    <string name="home_metric_mastered">Pekiştirilen</string>
+    <string name="home_tools_section">Kelime Yakalama Araçları</string>
+    <string name="home_overlay_on_badge">AÇIK</string>
+    <string name="home_overlay_off_badge">KAPALI</string>
+    <string name="home_overlay_desc">Video veya okuma uygulamaları üzerinde anında kelime yakala</string>
+    <string name="home_tool_voice_title">Sesli Yakalama</string>
+    <string name="home_tool_voice_sub">Mikrofonla anında ekle</string>
+    <string name="home_tool_voice_chip">Ses Aç</string>
+    <string name="home_tool_study_title">Çalışma Merkezi</string>
+    <string name="home_tool_study_sub">Grammar, Reading, Listening</string>
     <string name="home_today_summary">Bugünün Özeti</string>
     <string name="home_daily_progress_label">Günlük çalışma süresi</string>
     <string name="home_daily_progress_value">%1$d / %2$d dk</string>
@@ -69,12 +91,12 @@
     <string name="home_start_review">Tekrara başla</string>
     <string name="home_continue_study_title">Son çalışmaya devam et</string>
     <string name="home_continue_study_subtitle">Kaldığın konuyu veya metni doğrudan aç</string>
-    <string name="home_quick_shortcuts">Hızlı Başlangıç</string>
+    <string name="home_quick_shortcuts">Çalışma Modülleri</string>
     <string name="home_shortcut_voice">Sesli Kelime Ekle</string>
-    <string name="home_overlay_title">Yüzen Kelime Yakalama</string>
+    <string name="home_overlay_title">Ekranda Kayan Balon</string>
     <string name="home_overlay_perm_missing">Diğer uygulamaların üzerinde gösterim izni gerekli</string>
     <string name="home_overlay_running">Yüzen balon ekranda aktif</string>
-    <string name="home_overlay_ready">İzin hazır — video izlerken başlatabilirsin</string>
+    <string name="home_overlay_ready">İzin hazır — video izlerken açabilirsin</string>
     <string name="home_overlay_grant_perm">İzin Ver</string>
     <string name="home_overlay_start">Başlat</string>
     <string name="home_overlay_stop">Durdur</string>
@@ -123,8 +145,8 @@
     <string name="vocab_not_found_subtitle">Bu kayıt silinmiş veya henüz eşitlenmemiş olabilir.</string>
     <string name="vocab_srs_stats_title">Aralıklı Tekrar Durumu</string>
     <string name="vocab_srs_stats_body">Aralık: %1$d gün  •  Tekrar: %2$d  •  Kolaylık: %3$.2f</string>
-    <string name="vocab_ai_helper_title">İsteğe Bağlı Bağlam İpucu</string>
-    <string name="vocab_ai_helper_cta">Örnek &amp; Anlam Öner</string>
+    <string name="vocab_ai_helper_title">Sözlük &amp; Bağlam Yardımı</string>
+    <string name="vocab_ai_helper_cta">Anlam &amp; Örnek Getir</string>
     <string name="vocab_ai_apply_meaning">Boş alanlara uygula</string>
     <string name="vocab_contexts_header">Bağlam Örnekleri (%d)</string>
     <string name="vocab_add_context">Bağlam Ekle</string>

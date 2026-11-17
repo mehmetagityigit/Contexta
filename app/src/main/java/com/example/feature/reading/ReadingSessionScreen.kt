@@ -52,11 +52,11 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextLayoutResult
-import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.R
+import com.example.core.designsystem.BodyFontFamily
 import com.example.core.designsystem.ContextaCard
 import com.example.core.designsystem.ContextaLoadingView
 import com.example.core.designsystem.StatusPill
@@ -178,7 +178,7 @@ fun ReadingSessionScreen(
                         text = para.text,
                         fontSize = state.fontSizeSp.sp,
                         lineHeight = lineHeightSp,
-                        fontFamily = FontFamily.Serif,
+                        fontFamily = BodyFontFamily,
                         onTextLayout = { textLayoutResult = it },
                         modifier = Modifier
                             .fillMaxWidth()

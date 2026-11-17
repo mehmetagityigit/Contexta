@@ -20,10 +20,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.ArrowBack
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.Add
-import androidx.compose.material.icons.outlined.AutoAwesome
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.FavoriteBorder
+import androidx.compose.material.icons.outlined.SearchOff
+import androidx.compose.material.icons.outlined.Translate
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
@@ -116,7 +117,7 @@ fun VocabularyDetailScreen(
     ) { innerPadding ->
         if (item == null) {
             ContextaEmptyView(
-                icon = Icons.Outlined.AutoAwesome,
+                icon = Icons.Outlined.SearchOff,
                 title = stringResource(R.string.vocab_not_found_title),
                 subtitle = stringResource(R.string.vocab_not_found_subtitle),
                 actionLabel = stringResource(R.string.action_back),
@@ -233,7 +234,7 @@ fun VocabularyDetailScreen(
                             if (aiState.isLoading) {
                                 CircularProgressIndicator(modifier = Modifier.size(16.dp), strokeWidth = 2.dp)
                             } else {
-                                Icon(Icons.Outlined.AutoAwesome, contentDescription = null, modifier = Modifier.size(16.dp))
+                                Icon(Icons.Outlined.Translate, contentDescription = null, modifier = Modifier.size(16.dp))
                                 Spacer(Modifier.width(6.dp))
                                 Text(stringResource(R.string.vocab_ai_helper_cta))
                             }

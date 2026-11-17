@@ -1,6 +1,7 @@
 package com.example.feature.auth
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -16,13 +17,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.Login
 import androidx.compose.material.icons.outlined.AutoStories
 import androidx.compose.material.icons.outlined.Info
-import androidx.compose.material.icons.outlined.Science
+import androidx.compose.material.icons.outlined.MenuBook
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -39,6 +41,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.R
 import com.example.core.designsystem.ContextaCard
+import com.example.core.designsystem.LocalContextaColors
 import com.example.core.firebase.GoogleAuthManager
 import com.example.core.firebase.GoogleSignInOutcome
 import kotlinx.coroutines.launch
@@ -67,12 +70,21 @@ fun AuthScreen(
                 modifier = Modifier.widthIn(max = 520.dp).fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                Icon(
-                    imageVector = Icons.Outlined.AutoStories,
-                    contentDescription = null,
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(56.dp)
-                )
+                val navy = LocalContextaColors.current
+                Surface(
+                    shape = MaterialTheme.shapes.medium,
+                    color = navy.navySurface,
+                    modifier = Modifier.size(64.dp)
+                ) {
+                    Box(contentAlignment = Alignment.Center) {
+                        Icon(
+                            imageVector = Icons.Outlined.AutoStories,
+                            contentDescription = null,
+                            tint = navy.onNavySurface,
+                            modifier = Modifier.size(32.dp)
+                        )
+                    }
+                }
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = stringResource(R.string.app_name),
@@ -160,9 +172,9 @@ fun AuthScreen(
                 ContextaCard(modifier = Modifier.fillMaxWidth()) {
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         Icon(
-                            imageVector = Icons.Outlined.Science,
+                            imageVector = Icons.Outlined.MenuBook,
                             contentDescription = null,
-                            tint = MaterialTheme.colorScheme.tertiary
+                            tint = MaterialTheme.colorScheme.primary
                         )
                         Spacer(modifier = Modifier.size(8.dp))
                         Text(

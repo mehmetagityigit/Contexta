@@ -60,6 +60,28 @@
     <string name="loading_default">Loading…</string>
 
     <!-- Home -->
+    <string name="home_greeting_user">Hello, %s</string>
+    <string name="home_greeting_default">Hello, Learner</string>
+    <string name="home_greeting_subtitle">Capture words instantly while watching or reading</string>
+    <string name="home_hero_kicker">CONTEXTUAL WORD CAPTURE</string>
+    <string name="home_hero_headline">Never Forget Phrases\nYou Encounter!</string>
+    <string name="home_hero_add_word">+ Add Word</string>
+    <string name="home_hero_practice">Practice</string>
+    <string name="home_weekly_chart_title">Weekly Study Chart</string>
+    <string name="home_weekly_chart_subtitle">Daily study activity &amp; goal tracking</string>
+    <string name="home_daily_goal_chip">Goal: %d min/day</string>
+    <string name="home_metric_total_words">Total Words</string>
+    <string name="home_metric_due_now">Due Today</string>
+    <string name="home_metric_mastered">Mastered</string>
+    <string name="home_tools_section">Capture Tools</string>
+    <string name="home_overlay_on_badge">ON</string>
+    <string name="home_overlay_off_badge">OFF</string>
+    <string name="home_overlay_desc">Capture words over videos or reading apps seamlessly</string>
+    <string name="home_tool_voice_title">Voice Capture</string>
+    <string name="home_tool_voice_sub">Save phrases by speaking</string>
+    <string name="home_tool_voice_chip">Open Mic</string>
+    <string name="home_tool_study_title">Study Modules</string>
+    <string name="home_tool_study_sub">Grammar, Reading, Listening</string>
     <string name="home_today_summary">Today\'s Summary</string>
     <string name="home_daily_progress_label">Daily study time</string>
     <string name="home_daily_progress_value">%1$d / %2$d min</string>
@@ -69,12 +91,12 @@
     <string name="home_start_review">Start review</string>
     <string name="home_continue_study_title">Continue last study</string>
     <string name="home_continue_study_subtitle">Jump directly back to your recent topic or passage</string>
-    <string name="home_quick_shortcuts">Quick Start</string>
+    <string name="home_quick_shortcuts">Study Modules</string>
     <string name="home_shortcut_voice">Voice Add Word</string>
-    <string name="home_overlay_title">Floating Word Capture</string>
+    <string name="home_overlay_title">Floating Bubble</string>
     <string name="home_overlay_perm_missing">Display over other apps permission required</string>
     <string name="home_overlay_running">Floating bubble is active</string>
-    <string name="home_overlay_ready">Ready — launch before watching or reading</string>
+    <string name="home_overlay_ready">Ready — toggle on before watching or reading</string>
     <string name="home_overlay_grant_perm">Grant Permission</string>
     <string name="home_overlay_start">Start</string>
     <string name="home_overlay_stop">Stop</string>
@@ -123,8 +145,8 @@
     <string name="vocab_not_found_subtitle">This entry may have been deleted or not yet synced.</string>
     <string name="vocab_srs_stats_title">Spaced Repetition Schedule</string>
     <string name="vocab_srs_stats_body">Interval: %1$d d  •  Reps: %2$d  •  Ease: %3$.2f</string>
-    <string name="vocab_ai_helper_title">Optional Context Insight</string>
-    <string name="vocab_ai_helper_cta">Suggest Meaning &amp; Note</string>
+    <string name="vocab_ai_helper_title">Dictionary &amp; Context Helper</string>
+    <string name="vocab_ai_helper_cta">Get Meaning &amp; Example</string>
     <string name="vocab_ai_apply_meaning">Fill empty fields</string>
     <string name="vocab_contexts_header">Context Examples (%d)</string>
     <string name="vocab_add_context">Add Context</string>
